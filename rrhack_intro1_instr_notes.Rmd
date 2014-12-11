@@ -1,0 +1,93 @@
+---
+title: 'Session 1: Motivating reproducibility'
+author: ''
+date: ''
+output: html_document
+---
+
+## Pre-workshop task
+
+Participants have been asked to install R and RStudio prior to the workshop. It is possible that some of them did not yet do that. If people show up early remind them to install R and RStudio, and re-point them to the following instructions:
+
+* Mac:
+    * Video for installing R and RStudio: https://www.youtube.com/watch?v=Ywj6yNfc5nM
+    * Instructions for installing R: http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-R-under-OS-X
+    * Instructions for installing RStudio: [TO DO]
+
+* Windows:
+    * Video for installing R and RStudio: https://www.youtube.com/watch?v=eD07NznguA4
+    * Instructions for installing R: http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-R-under-Windows
+    * Instructions for installing RStudio: [TO DO]
+
+
+## Intro (20 min)
+
+#### Welcome + go over schedule
+
+* Welcome the participants and briefly go over the schedule for the 2-day workshop. 
+* Remind them the mission statement and the tagline: 
+    * Mission statement: To Train researchers in the best practices and approaches of reproducible research and accelerate scientific progress
+    * Tagline: Accelerating science ... reproducibility [TO DO: Find what the tagline we decided on was]
+* Review the case study: 
+    * [TO DO - Dave is working on pinning this down + Someone will need to create slides/notes and add instructions here]
+
+## Ex 1: Naive reproducibility (40 mins)
+
+**Part 1: 20 mins**
+
+Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset. 
+
+1. Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
+    * Stretch goal: Add lines for Mexico and US.
+  
+2. Visualize the relationship between GDP and life expectancy for countries in Europe in the 1952.
+    * Stretch goal: Add a line for 1967 in another color.
+
+**Part 2: Swap (20 mins)**
+
+- Introduce yourself to your collaborator and tell them why you're here.
+
+- Swap instructions/documentation with your collaborator, and try to reproduce their work without talking to each oher. If your collaborator does not have the software they need to reproduce your work, we encourage you to either help them install it or walk them through it on your computer in a way that would emulate the experience.
+
+- Then, talk to each other about challenges you faced (or didn't face) or why you were or weren't able to reproduce their work.
+
+## Group discussion: (15 mins)
+
+Notes for instructors: 
+
+* What tools did you use (Excel / R / Word / plain text etc.)? Was your collaborator successful in reproducing your work? (Google form might be useful.)
+
+* Ask the following questions:
+    * Have you ever tried to reproduce someone else's data analysis before?
+    * Have you ever tried to reproduce your own work before?
+    * What tools did you use and were you successful in reproducing your collaborator's work? 
+    * What made it easy/hard for reproducing your parners' work?
+    * What would have to happen if you had to extend the analysis further?
+    * If you caught a data error how easy/hard would it be to re-create the analysis?
+    * What would happen if your collaborator is no longer available to walk you through their analysis?
+    
+## Take-aways: (15 mins or whatever is left over)
+
+Let's summarize what we've learned: We focused on 2 of the 4 problems, good documentation and sharing...
+
+And go over the reproducibility checklist.
+
+## Coffee break
+
+Help install R/RStudio for those who haven't prior to the workshop
+
+
+**Below are notes from the etherpad to be organized and incorporated into instructor notes for this session:**
+Preconceived ideas
+They don't have a problem
+Discussion with organization group
+Projects aren't big enough for a folder structure
+I am storing images.  I am not doing computation
+Difference in binary vs. text flies
+Discussion with publishing group
+sharing, archival, and publication are non-snynomous
+publication is not all-or-nothing that comes solely at the end, but is stepwise
+Discussion with narration group
+I will remember what I did/what may really non-descriptive column names and codes mean
+Discussion with versioning group
+???

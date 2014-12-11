@@ -1,0 +1,127 @@
+---
+title: 'Code for preparing materials for Session 1'
+author: ''
+date: ''
+output: html_document
+---
+
+## Data prep
+
+The gapminder dataset is in the `gapminder` package:
+```{r}
+library(gapminder)
+```
+
+Write out the complete file as csv, just in case:
+```{r cache=TRUE}
+write.csv(gapminder, file = "data/gapminder.csv", row.names = FALSE)
+```
+
+In this session only data from 1950s and 1960s will be released:
+```{r}
+gapminder_5060 = gapminder[gapminder$year < 1970, ]
+write.csv(gapminder_5060, file = "data/gapminder_5060.csv")
+```
+
+## Task 1:
+
+Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
+
+    * Create a subset of `gapminder_5060` for Canada:
+```{r}
+ca_5060 = gapminder_5060[gapminder_5060$country == "Canada", ]
+```
+    * Create the scatterplot using `ggplot2`:
+```{r}
+library(ggplot2)
+ggplot(data = ca_5060, aes(x = year, y = lifeExp)) +
+  geom_point() +
+  geom_line() 
+```
+
+### Task 1 - Stretch goal:
+
+Add lines for Mexico and US in the 1950s and 1960s.
+
+    * Create a subset of `gapminder_5060` for Canada, Mexico, and US:
+```{r}
+countries = c("Canada", "Mexico", "United States")
+northamer_5060 = gapminder_5060[gapminder_5060$country %in% countries, ]
+```
+    * Create the scatterplot using `ggplot2`:
+```{r}
+library(ggplot2)
+ggplot(data = northamer_5060, aes(x = year, y = lifeExp, group = country, colour = country)) +
+  geom_line() +
+  geom_point()
+```
+
+## Task 2:
+
+Visualize the relationship between GDP and life expectancy for countries in Europe in 1952.
+
+    * Create a subset of `gapminder_5060` for Europe in 1952:
+```{r}
+eu_52 = gapminder_5060[gapminder_5060$continent == "Europe" & gapminder_5060$year == 1952, ]
+```
+    * Create the plot:
+```{r}
+ggplot(data = eu_52, aes(x = lifeExp, y = gdpPercap)) +
+  geom_line() +
+  geom_point()
+```
+
+### Task 2 - Stretch goal:
+
+Add year 1967 in another color.
+
+
+
+
+**Part 2: Swap (20 mins)**
+
+- Introduce yourself to your collaborator and tell them why you're here.
+
+- Swap instructions/documentation with your collaborator, and try to reproduce their work without talking to each oher. If your collaborator does not have the software they need to reproduce your work, we encourage you to either help them install it or walk them through it on your computer in a way that would emulate the experience.
+
+- Then, talk to each other about challenges you faced (or didn't face) or why you were or weren't able to reproduce their work.
+
+## Group discussion: (15 mins)
+
+Notes for instructors: 
+
+* What tools did you use (Excel / R / Word / plain text etc.)? Was your collaborator successful in reproducing your work? (Google form might be useful.)
+
+* Ask the following questions:
+    * Have you ever tried to reproduce someone else's data analysis before?
+    * Have you ever tried to reproduce your own work before?
+    * What tools did you use and were you successful in reproducing your collaborator's work? 
+    * What made it easy/hard for reproducing your parners' work?
+    * What would have to happen if you had to extend the analysis further?
+    * If you caught a data error how easy/hard would it be to re-create the analysis?
+    * What would happen if your collaborator is no longer available to walk you through their analysis?
+    
+## Take-aways: (15 mins or whatever is left over)
+
+Let's summarize what we've learned: We focused on 2 of the 4 problems, good documentation and sharing...
+
+And go over the reproducibility checklist.
+
+## Coffee break
+
+Help install R/RStudio for those who haven't prior to the workshop
+
+
+Preconceived ideas
+They don't have a problem
+Discussion with organization group
+Projects aren't big enough for a folder structure
+I am storing images.  I am not doing computation
+Difference in binary vs. text flies
+Discussion with publishing group
+sharing, archival, and publication are non-snynomous
+publication is not all-or-nothing that comes solely at the end, but is stepwise
+Discussion with narration group
+I will remember what I did/what may really non-descriptive column names and codes mean
+Discussion with versioning group
+???
