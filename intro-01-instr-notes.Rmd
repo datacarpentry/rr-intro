@@ -27,22 +27,22 @@ Participants have been asked to install R and RStudio prior to the workshop. It 
 
 #### Welcome + go over schedule
 
-* Welcome the participants and briefly go over the schedule for the 2-day workshop. 
-* Remind them the mission statement and the tagline: 
+* Welcome the participants and briefly go over the schedule for the 2-day workshop.
+* Remind them the mission statement and the tagline:
     * Mission statement: To Train researchers in the best practices and approaches of reproducible research and accelerate scientific progress
     * Tagline: Accelerating science ... reproducibility **[TO DO: Find what the tagline we decided on was]**
-* Review the case study: 
+* Review the case study:
     * **[TO DO - Dave is working on pinning this down. One idea is to provide a few and let the instructor choose.]**
 
 ## Ex 1: Naive reproducibility (40 mins)
 
 **Part 1: 20 mins**
 
-Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset. 
+Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset.
 
 1. Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
     * Stretch goal: Add lines for Mexico and US.
-  
+
 2. Visualize the relationship between GDP and life expectancy for countries in Europe in the 1952.
     * Stretch goal: Add a line for 1967 in another color.
 
@@ -56,45 +56,23 @@ Complete the following tasks and write instructions/documentation for your colla
 
 ## Group discussion: (15 mins)
 
-Notes for instructors: 
+Notes for instructors:
 
 * Collect data from the students on their tool choice and success: (If you know that the session will have a large number of participants preparing a Google Form might be useful.)
-    * What tools did you use (Excel / R / Word / plain text etc.)? 
-    * Was your collaborator successful in reproducing your work? 
+    * What tools did you use (Excel / R / Word / plain text etc.)?
+    * Was your collaborator successful in reproducing your work?
 
 * Ask the following questions:
     * Have you ever tried to reproduce someone else's data analysis before?
     * Have you ever tried to reproduce your own work before?
-    * What tools did you use and were you successful in reproducing your collaborator's work? 
+    * What tools did you use and were you successful in reproducing your collaborator's work?
     * What made it easy/hard for reproducing your parners' work?
     * What would have to happen if you had to extend the analysis further?
     * If you caught a data error how easy/hard would it be to re-create the analysis?
     * What would happen if your collaborator is no longer available to walk you through their analysis?
-    
+
 ## Take-aways: (15 mins or whatever is left over)
 
-* Let's summarize what we've learned: 
-    * We focused on 2 of the 4 problems, good documentation and sharing...
-
-* Most people's preconcieved notions: **[TO DO: Pat to look over the following]**
-    * "I don't have a problem with reproducibility."
-    *  Organization session will adress the following:
-        * "My projects aren't big enough for a folder structure."
-        * "I am storing images. I am not doing computation."
-        * "What is the difference in binary vs. text flies anyway?"
-    * Publishing session will address the following:
-        * "Sharing, archival, and publication are non-synonymous."
-        * Publication is not all-or-nothing that comes solely at the end, but is stepwise.
-    * Narration session will address the following:
-        * "I will remember what I did / what may really non-descriptive column names and 
-        codes mean two months from now."
-        
-        
-    * "My projects aren't big enough for a folder structure.": Organization session will discuss this.
-    * "I am not doing computation, I am just storing images."
-    * "I will remember what I did / what may really non-descriptive column names and codes mean.": 
-
-* And go over the reproducibility checklist.
 
 ## Coffee break
 
