@@ -57,5 +57,3 @@ TO DO: Create an RMarkdown file that contains the code/annotation/narrative for 
 This will serve as the template for the exercises. (Paul + Mine)
 
 TO DO: Develop the exercises and write the accompanying instructor notes (Paul)
-
-TO DO: Write a section on introduction to RStudio (Pat)
