@@ -22,7 +22,7 @@ gapminder_5060 = read.csv("data/gapminder-5060.csv")
 
 We will use the `ggplot2` package to make the plots for these exercises. This is not the only way to make this plot, but the `ggplot2` package has some aesthetic defaults that makes it attractive. 
 
-The first time you need a package you need to first download and install it. The function below checks to see if the package is already installed, and if not it installs it.
+The first time you need a package you need to first download and install it. The function below checks to see if the package is already installed, and if not it installs it. (Note: If you are a brand new R used the code below might be a bit much at once, but not understanding it fully will not prevent you from following on with the rest of the analysis.)
 
 ```{r}
 if (!("ggplot2" %in% names(installed.packages()[,"Package"]))) {
@@ -36,39 +36,55 @@ Then, we load the package:
 library(ggplot2)
 ```
 
-## Task 1:
+If you'd like to learn more about `ggplot2`, we recommend visiting http://ggplot2.org/, which includes links to documentation about the functions in this package as well as external resources.
+
+## Task 1: 
 
 Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
 
-* Create a subset of `gapminder_5060` for Canada:
+* Create a subset of `gapminder_5060` for Canada: 
+
+The first argument is the dataset, and the second argument is the logical expression that you want to use for subsetting. Note that the "double equals" in R, `==`, reads as "if it is equal to".
 ```{r}
 ca_5060 = subset(gapminder_5060, country == "Canada")
 ```
 
+Each function in R comes with a help file. To view the help file for subset you can either click on the *Help* tab in the lower right pane, and enter the function's name in the search box, or type `?subset` in the *Console*.
+
 * Create the plot:
+
+In the first layer we specify the dataset and the variables to go in the x and y axes, and next we layer on the lines.
 ```{r}
 ggplot(data = ca_5060, aes(x = year, y = lifeExp)) + # creates the first layer
   geom_line()                                        # add line
 ```
 
-### Task 1 - Stretch goal:
+### Task 1 - Stretch goal: 
 
 Add lines for Mexico and US in the 1950s and 1960s.
 
 * Create a subset of `gapminder_5060` for Canada, Mexico, and US:
+
+First we create a vector of the countries we want:
 ```{r}
 countries = c("Canada", "Mexico", "United States")
+```
+
+Then we subset for observations where the country is in the list of countries we defined above:
+```{r}
 northamer_5060 = subset(gapminder_5060, country %in% countries)
 ```
 
 * Create the plot:
+
+The only difference in the code below is `colour = country`, since we want a different color for each country.
 ```{r}
 ggplot(data = northamer_5060, 
        aes(x = year, y = lifeExp, colour = country)) + # add colour by country
   geom_line()                                          # add line 
 ```
 
-## Task 2:
+## Task 2: 
 
 Visualize the relationship between GDP and life expectancy for countries in Europe in 1952 using a scatter plot.
 
@@ -83,7 +99,7 @@ ggplot(data = eu_52, aes(x = lifeExp, y = gdpPercap)) +
   geom_point()                                          # add points
 ```
 
-### Task 2 - Stretch goal:
+### Task 2 - Stretch goal: 
 
 Add year 1967 in another color.
 
