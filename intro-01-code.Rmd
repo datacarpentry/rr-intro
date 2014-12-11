@@ -24,14 +24,18 @@ Visualize the relationship between life expectancy over time for Canada in the 1
 
 * Create a subset of `gapminder_5060` for Canada:
 ```{r}
-ca_5060 = gapminder_5060[gapminder_5060$country == "Canada", ]
+ca_5060 = subset(gapminder_5060, country == "Canada")
+```
+
+* Load `ggplot2`:
+```{r}
+if (!("ggplot2" %in% names(installed.packages()[,"Package"]))) {install.packages("ggplot2")}
+library(ggplot2)
 ```
 
 * Create the scatterplot using `ggplot2`:
 ```{r}
-library(ggplot2)
 ggplot(data = ca_5060, aes(x = year, y = lifeExp)) +
-  geom_point() +
   geom_line() 
 ```
 
@@ -42,24 +46,22 @@ Add lines for Mexico and US in the 1950s and 1960s.
 * Create a subset of `gapminder_5060` for Canada, Mexico, and US:
 ```{r}
 countries = c("Canada", "Mexico", "United States")
-northamer_5060 = gapminder_5060[gapminder_5060$country %in% countries, ]
+northamer_5060 = subset(gapminder_5060, country %in% countries)
 ```
 
-* Create the scatterplot using `ggplot2`:
+* Create the plot:
 ```{r}
-library(ggplot2)
 ggplot(data = northamer_5060, aes(x = year, y = lifeExp, colour = country)) +
-  geom_line() +
   geom_point()
 ```
 
 ## Task 2:
 
-Visualize the relationship between GDP and life expectancy for countries in Europe in 1952.
+Visualize the relationship between GDP and life expectancy for countries in Europe in 1952 using a scatter plot.
 
 * Create a subset of `gapminder_5060` for Europe in 1952:
 ```{r}
-eu_52 = gapminder_5060[gapminder_5060$continent == "Europe" & gapminder_5060$year == 1952, ]
+eu_52 = subset(gapminder_5060, continent == "Europe" & gapminder_5060$year == 1952)
 ```
 
 * Create the plot:
@@ -75,7 +77,8 @@ Add year 1967 in another color.
 
 * Create a subset of `gapminder_5060` for Europe in 1952 and 1967:
 ```{r}
-eu_5267 = gapminder_5060[gapminder_5060$continent == "Europe" & (gapminder_5060$year == 1952 | gapminder_5060$year == 1967), ]
+years = c(1952, 1967)
+eu_5267 = subset(gapminder_5060, continent == "Europe" & (year %in% years))
 ```
 
 * Create the plot:
