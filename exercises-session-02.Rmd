@@ -1,0 +1,23 @@
+---
+title: "Session 2 Exercises"
+output: html_document
+---
+
+The analyses you and your collaborator carried out in the morning session was based just on data from 1950s and 60s.  Luckily, you have other collaborators, and you've just recived two new sets of data extending your analyses into the 70s and 80s, and the 1990s and later.  Your task will be to extend your previous analyses, incoporating these new data.
+
+### Extending Your Initial Analyses 
+
+Task 1: Append the new data `gapminder-seventies-and-eighties.csv` and and `gapminder-nineties-and-later.csv` to your existing data set.
+
+Task 2:  Create line plots of life expectancy over time for Canada, Mexico, and the United States that run from 1952 to 2007.
+- Stretch goal:  In the same plot, add similar line plots for Cambodia, China, and Japan and Uganda, Egypt, and South Africa
+
+Task 3: Create a scatter plot depictcting GDP vs. life expectancy of countries in Europe for 2007
+- Stretch goal: In the same plot, add another scatter of points for Asia, Africa, and the Americas, coloring the countries from each region (continent) with the same color
+
+As you carry out each of the tasks above, take note of how you would have to modify the documentation you created in the morning session, to take into account the new data and the modified analyses.
+
+
+
+
+
