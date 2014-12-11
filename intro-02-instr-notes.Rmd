@@ -1,0 +1,10 @@
+---
+title: 'Intro Session 2: Automation and Organizatio'
+author: ''
+date: ''
+output:
+  html_document:
+    fig_height: 3
+    fig_width: 6
+---
+
