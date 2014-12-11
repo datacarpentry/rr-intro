@@ -12,9 +12,9 @@ Goal: Append the new data `gapminder-seventies-and-eighties.csv` and and `gapmin
 
 Reading in the data is quick and easy with the `read.csv` function.  
 ```{r}
-gap.5060 <- read.csv('data/gapminder-fifties-and-sixties.csv')
-gap.7080 <- read.csv('data/gapminder-seventies-and-eighties.csv')
-gap.90plus <- read.csv('data/gapminder-nineties-and-later.csv')
+gap_5060 <- read.csv('data/gapminder-5060.csv')
+gap_7080 <- read.csv('data/gapminder-7080.csv')
+gap_90plus <- read.csv('data/gapminder-90plus.csv')
 ```
 
 There are a number of similarly named functions for reading files, such as  `read.delim` (tab-delimited files) and `read.table` (allows you to specify the separator), and there are similar third-party solutions for Excel spreadsheets and various other formats.
@@ -22,38 +22,72 @@ There are a number of similarly named functions for reading files, such as  `rea
 Once read in, the data are stored in a data structured called a "data frame". It's convenient to take a quick look at the data to make sure we know what it looks like. To do so, we'll use the `head` and `tail` functions which show the first and last lines of a data frame.
 
 ```{r}
-head(gap.5060)
+head(gap_5060)
 ```
 
 
 ```{r}
-tail(gap.5060)
+tail(gap_5060)
 ```
 
 When working in R markdown (via knitr) we can use the `kable` function to make a prettier version of the output from `head`.
 
 ```{r}
 library(knitr)  # loads the knitr package, so we can use kable
-kable(head(gap.90plus))
+kable(head(gap_90plus))
 ```
 
 
 ## Combining data frames
 
-The functions `rbind` and `cbind` can be used to combine data frames. `rbind` combineds rows (such as when adding now observations to a data set), `cbind` combines by columns (useful when adding new variables to a data set).  In the current context, we want to add new rows to our data set so we'll use `rbind`.
+The functions `rbind` and `cbind` can be used to combine data frames. `rbind` combineds rows (such as when adding now observations to a data set), `cbind` combines by columns (useful when adding new variables to a data set).  
+
+In the current context, we want to add new rows to our data set so we'll use `rbind`. One of the really convenient things about using `rbind` rather than trying to combine the spreadsheets in a program like Excel is that `rbind` matches columns by their names rather than locations, so a simple reordering of columns in one data frame versus another is very simply dealt with.
+
 
 ```{r}
-gap.combined <- rbind(gap.5060, gap.7080, gap.90plus)
+gap_combined <- rbind(gap_5060, gap_7080, gap_90plus)
 ```
 
 
 ```{r}
-kable(head(gap.combined))
+kable(head(gap_combined))
 ```
 
 
 ```{r}
-kable(tail(gap.combined))
+kable(tail(gap_combined))
 ```
+
+
+# Task 02
+
+Goal: Create line plots of life expectancy over time for Canada, Mexico, and the United States that run from 1952 to 2007.
+- Stretch goal:  In the same plot, add similar line plots for Cambodia, China, and Japan and Egypt, South Africa, and Uganda.  Color countries with the same continent the same color.
+
+
+```{r}
+library(ggplot2)
+```
+
+Initial Goal
+```{r}
+north_america <- subset(gap_combined, country %in% c('Canada', 'Mexico', 'United States'))
+
+ggplot(north_america, aes(x = year, y = lifeExp, color=country)) + geom_line() + xlab("Year") + ylab("Life Expectancy")
+```
+
+Stretch Goal:
+```{r}
+
+country_list <- c('Canada', 'Mexico', 'United States', 'Cambodia', 'China', 'Japan', 'Egypt', 'South Africa', 'Uganda')
+gap_coi <- subset(gap_combined, country %in% country_list)
+
+ggplot(gap_coi, aes(x = year, y = lifeExp, group=country, color=continent)) + geom_line() + xlab("Year") + ylab("Life Expectancy")
+
+```
+
+## Task 03
+
 
 
