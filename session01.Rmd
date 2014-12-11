@@ -15,6 +15,10 @@ knit        : slidify::knit2slides
 * Bullet one
 * Bullet two
 
+*** =pnotes
+* This is where presenter notes go
+
+
 --- .segue .dark
 
 ## Transition
