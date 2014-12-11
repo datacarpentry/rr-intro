@@ -6,7 +6,7 @@ output: html_document
 
 # Task 01
 
-Gaol: Append the new data `gapminder-seventies-and-eighties.csv` and and `gapminder-nineties-and-later.csv` to your existing data set.
+Goal: Append the new data `gapminder-seventies-and-eighties.csv` and and `gapminder-nineties-and-later.csv` to your existing data set.
 
 ## Reading files
 
