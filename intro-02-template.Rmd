@@ -72,9 +72,9 @@ library(ggplot2)
 
 Initial Goal
 ```{r}
-north_america <- subset(gap_combined, country %in% c('Canada', 'Mexico', 'United States'))
+gap_north_america <- subset(gap_combined, country %in% c('Canada', 'Mexico', 'United States'))
 
-ggplot(north_america, aes(x = year, y = lifeExp, color=country)) + geom_line() + xlab("Year") + ylab("Life Expectancy")
+ggplot(gap_north_america, aes(x = year, y = lifeExp, color=country)) + geom_line() + xlab("Year") + ylab("Life Expectancy")
 ```
 
 Stretch Goal:
@@ -89,5 +89,21 @@ ggplot(gap_coi, aes(x = year, y = lifeExp, group=country, color=continent)) + ge
 
 ## Task 03
 
+
+Task 3: Create a scatter plot depictcting GDP vs. life expectancy of countries in Europe for 2007
+- Stretch goal: In the same plot, add another scatter of points for Asia, Africa, and the Americas, and Oceania, coloring the countries from each region (continent) with the same color
+
+
+```{r}
+gap_europe <- subset(gap_combined, continent == 'Europe' & year == 2007)
+
+ggplot(gap_europe, aes(x=gdpPercap, y = lifeExp)) + geom_point() + xlab("GDP (per capita)") + ylab("Life Expectancy")
+```
+
+```{r}
+gap_2007 <- subset(gap_combined, year == 2007)
+
+ggplot(gap_2007, aes(x=gdpPercap, y = lifeExp, group=continent, color=continent)) + geom_point() + xlab("GDP (per capita)") + ylab("Life Expectancy")
+```
 
 
