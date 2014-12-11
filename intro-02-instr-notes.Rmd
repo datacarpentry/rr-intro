@@ -1,0 +1,90 @@
+---
+title: 'Intro Session 2: Automation and Organizatio'
+author: ''
+date: ''
+output:
+  html_document:
+    fig_height: 3
+    fig_width: 6
+---
+
+## R is for Reproducibility
+
+**Why R?**
+* Programming language for data analysis
+* Free!
+* Open source
+* Widely used and supported across all disciplines
+* Can be used on Windows, Mac OS X or Linux
+
+Show the learners a screen shot of R running from the terminal. Perhaps show
+that it is an overgrown calculator:
+
+![R Splash Screen Shot](img/RSplashScreen.png)
+
+
+**Why not language X?**
+* There are a number of other great programming tools out there that can also
+be used to improve the reproducibility of your analysis
+* The key is to use some type of language that will allow you to automate
+and document your analysis
+* Once you master one language you'll probably find it easier to learn another
+* Might ask learners what programming languages they already know with a show of
+  hands for...
+  * R
+  * Python
+  * Perl
+  * SQL
+  * Java
+  * C/C++
+* It would be good to jot down numbers to store as "data" for later usage.
+
+
+
+**You could just type into the command prompt...**
+* ... but that doesn't help much with documentation
+* ... but that doesn't help much with automation
+
+
+**A better solution**
+
+With RStudio you can combine your programming and your documentation
+* RStudio gives you a single environment to combine your documentation and your
+analysis
+* It runs on top of R
+* Gives you a bunch of really cool features that we'll explore throughout the
+workshop
+* Show the learners a screen shot of R running from the terminal. Perhaps replicate that it is an overgrown calculator and orient them to the different panes in the environment:
+
+![RStudio Splash Screen Shot](img/RStudioSplash.png)
+
+
+
+
+## Summary
+Let's summarize what we've learned:
+* First and foremost, we learned that everyone struggles with reproducibility
+  and that it is a hindrance to moving science forward
+
+* We focused on 4 problems: organization, documentation, automation, and
+  dissemination with a fairly simple analysis. Over the next two days, our
+  project will become more complex as we gather more data and ask more
+  complicated questions.
+
+* In discussing:
+  * ***Organization*** you will be given tools to organize your projects
+    so that you don't have a single folder with hundreds of files
+  * ***Documentation*** you will learn the difference between binary files
+    (e.g. docx) and text files and why text files are preferred using a simple
+    tool called markdown that you can use to write descriptions of your data and
+    your workflow so that anyone can pick up your data and understand what you
+    are doing
+  * ***Automation*** you will learn about the power of scripting in the R
+    programming language and how you can integrate that into markdown to create
+    automated data analyses
+  * ***Dissemination*** you will see that publishing is not the end of your
+    analysis. Rather it is a way station towards your future research and the
+    future research of others.
+
+* Finally, throughout the workshop we will give you a rubric that you can use to
+  assess the likelihood that you analysis can be reproduced by others
