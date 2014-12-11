@@ -95,7 +95,7 @@ eu_52 = subset(gapminder_5060, continent == "Europe" & gapminder_5060$year == 19
 
 * Create the plot:
 ```{r}
-ggplot(data = eu_52, aes(x = lifeExp, y = gdpPercap)) +
+ggplot(data = eu_52, aes(x = gdpPercap, y = lifeExp)) +
   geom_point()                                          # add points
 ```
 
@@ -111,6 +111,6 @@ eu_5267 = subset(gapminder_5060, continent == "Europe" & (year %in% years))
 
 * Create the plot:
 ```{r}
-ggplot(data = eu_5267, aes(x = lifeExp, y = gdpPercap, colour = as.factor(year))) +
+ggplot(data = eu_5267, aes(x = gdpPercap, y = lifeExp, colour = as.factor(year))) +
   geom_point()
 ```
