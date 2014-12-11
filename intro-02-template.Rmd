@@ -1,0 +1,31 @@
+---
+title: "session2-template"
+output: html_document
+---
+
+
+# Task 01
+
+Gaol: Append the new data `gapminder-seventies-and-eighties.csv` and and `gapminder-nineties-and-later.csv` to your existing data set.
+
+## Reading files
+
+Reading in the data is quick and easy with the `read.csv` function.  
+```{r}
+gap.50_60 <- read.csv('data/gapminder-fifties-and-sixties.csv')
+gap.70_80 <- read.csv('data/gapminder-seventies-and-eighties.csv')
+gap.90_plus <- read.csv('data/gapminder-nineties-and-later.csv')
+```
+
+There are a number of similarly named functions for reading files, such as  `read.delim` (tab-delimited files) and `read.table` (allows you to specify the separator), and there are similar third-party solutions for Excel spreadsheets and various other formats.
+
+Once read in, the data are stored in a data structured called a "data frame"
+
+## Combining data frames
+
+The functions `rbind` and `cbind` can be used to combine data frames. `rbind` combineds rows (such as when adding now observations to a data set), `cbind` combines by columns (useful when adding new variables to a data set).  In the current context, we want to add new rows to our data set so we'll use `rbind`.
+
+```{r}
+gap.combined <- rbind(gap.50_60, gap.70_80, gap.90_plus)
+```
+
