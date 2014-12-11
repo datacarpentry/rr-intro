@@ -1,8 +1,11 @@
 ---
-title: 'Session 1: Motivating reproducibility'
+title: 'Intro Session 1: Motivating reproducibility'
 author: ''
 date: ''
-output: html_document
+output:
+  html_document:
+    fig_height: 3
+    fig_width: 6
 ---
 
 ## Pre-workshop task
@@ -12,12 +15,12 @@ Participants have been asked to install R and RStudio prior to the workshop. It 
 * Mac:
     * Video for installing R and RStudio: https://www.youtube.com/watch?v=Ywj6yNfc5nM
     * Instructions for installing R: http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-R-under-OS-X
-    * Instructions for installing RStudio: [TO DO]
+    * Instructions for installing RStudio: **[TO DO]**
 
 * Windows:
     * Video for installing R and RStudio: https://www.youtube.com/watch?v=eD07NznguA4
     * Instructions for installing R: http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-R-under-Windows
-    * Instructions for installing RStudio: [TO DO]
+    * Instructions for installing RStudio: **[TO DO]**
 
 
 ## Intro (20 min)
@@ -27,9 +30,9 @@ Participants have been asked to install R and RStudio prior to the workshop. It 
 * Welcome the participants and briefly go over the schedule for the 2-day workshop. 
 * Remind them the mission statement and the tagline: 
     * Mission statement: To Train researchers in the best practices and approaches of reproducible research and accelerate scientific progress
-    * Tagline: Accelerating science ... reproducibility [TO DO: Find what the tagline we decided on was]
+    * Tagline: Accelerating science ... reproducibility **[TO DO: Find what the tagline we decided on was]**
 * Review the case study: 
-    * [TO DO - Dave is working on pinning this down + Someone will need to create slides/notes and add instructions here]
+    * **[TO DO - Dave is working on pinning this down. One idea is to provide a few and let the instructor choose.]**
 
 ## Ex 1: Naive reproducibility (40 mins)
 
@@ -55,7 +58,9 @@ Complete the following tasks and write instructions/documentation for your colla
 
 Notes for instructors: 
 
-* What tools did you use (Excel / R / Word / plain text etc.)? Was your collaborator successful in reproducing your work? (Google form might be useful.)
+* Collect data from the students on their tool choice and success: (If you know that the session will have a large number of participants preparing a Google Form might be useful.)
+    * What tools did you use (Excel / R / Word / plain text etc.)? 
+    * Was your collaborator successful in reproducing your work? 
 
 * Ask the following questions:
     * Have you ever tried to reproduce someone else's data analysis before?
@@ -68,26 +73,29 @@ Notes for instructors:
     
 ## Take-aways: (15 mins or whatever is left over)
 
-Let's summarize what we've learned: We focused on 2 of the 4 problems, good documentation and sharing...
+* Let's summarize what we've learned: 
+    * We focused on 2 of the 4 problems, good documentation and sharing...
 
-And go over the reproducibility checklist.
+* Most people's preconcieved notions: **[TO DO: Pat to look over the following]**
+    * "I don't have a problem with reproducibility."
+    *  Organization session will adress the following:
+        * "My projects aren't big enough for a folder structure."
+        * "I am storing images. I am not doing computation."
+        * "What is the difference in binary vs. text flies anyway?"
+    * Publishing session will address the following:
+        * "Sharing, archival, and publication are non-synonymous."
+        * Publication is not all-or-nothing that comes solely at the end, but is stepwise.
+    * Narration session will address the following:
+        * "I will remember what I did / what may really non-descriptive column names and 
+        codes mean two months from now."
+        
+        
+    * "My projects aren't big enough for a folder structure.": Organization session will discuss this.
+    * "I am not doing computation, I am just storing images."
+    * "I will remember what I did / what may really non-descriptive column names and codes mean.": 
+
+* And go over the reproducibility checklist.
 
 ## Coffee break
 
-Help install R/RStudio for those who haven't prior to the workshop
-
-
-**Below are notes from the etherpad to be organized and incorporated into instructor notes for this session:**
-Preconceived ideas
-They don't have a problem
-Discussion with organization group
-Projects aren't big enough for a folder structure
-I am storing images.  I am not doing computation
-Difference in binary vs. text flies
-Discussion with publishing group
-sharing, archival, and publication are non-snynomous
-publication is not all-or-nothing that comes solely at the end, but is stepwise
-Discussion with narration group
-I will remember what I did/what may really non-descriptive column names and codes mean
-Discussion with versioning group
-???
+Help install R/RStudio for those who haven't prior to the workshop.

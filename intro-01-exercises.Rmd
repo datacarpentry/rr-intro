@@ -1,0 +1,43 @@
+---
+title: 'Intro Session 1: Motivating reproducibility'
+author: ''
+date: ''
+output:
+  html_document:
+    fig_height: 3
+    fig_width: 6
+---
+
+## Welcome!
+
+If you have not yes install R and RStudio, and there is still some time till the workshop begins, please go ahead and do so now. Alternatively, you'll get a chance to do this over the coffee break as well.
+
+* Mac:
+    * Video for installing R and RStudio: https://www.youtube.com/watch?v=Ywj6yNfc5nM
+    * Instructions for installing R: http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-R-under-OS-X
+    * Instructions for installing RStudio: [TO DO]
+
+* Windows:
+    * Video for installing R and RStudio: https://www.youtube.com/watch?v=eD07NznguA4
+    * Instructions for installing R: http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Installing-R-under-Windows
+    * Instructions for installing RStudio: [TO DO]
+
+## Ex 1: Naive reproducibility
+
+**Part 1: Analyze + document**
+
+Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset. 
+
+1. Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot. (If you are quickly done with the main exercise and need something to fill your time with, you can work on the stretch goal below.)
+    * Stretch goal: Add lines for Mexico and US.
+  
+2. Visualize the relationship between GDP and life expectancy for countries in Europe in the 1952.
+    * Stretch goal: Add a line for 1967 in another color.
+
+**Part 2: Swap + discuss**
+
+- Introduce yourself to your collaborator and tell them why you're here.
+
+- Swap instructions/documentation with your collaborator, and try to reproduce their work without talking to each oher. If your collaborator does not have the software they need to reproduce your work, we encourage you to either help them install it or walk them through it on your computer in a way that would emulate the experience.
+
+- Then, talk to each other about challenges you faced (or didn't face) or why you were or weren't able to reproduce their work.
