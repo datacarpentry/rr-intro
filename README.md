@@ -48,8 +48,8 @@ Catch everyone up with R/RStudio instructions
 
 Provide RMarkdown approach to what's done in Session 1, and then demonstrate how this approach makes automation and organization easier.
 
-TO DO: Align session 1 and session 2 materials to remove redundancies, use common language/syntax.
-
 
 =======
-TO DO: Develop the exercises and write the accompanying instructor notes (Paul)
+* TODO: Develop the exercises and write the accompanying instructor notes (Paul)
+* TODO: Align session 1 and session 2 materials to remove redundancies, use common language/syntax.
+
