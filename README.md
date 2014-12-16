@@ -51,8 +51,5 @@ Provide RMarkdown approach to what's done in Session 1, and then demonstrate how
 TO DO: Align session 1 and session 2 materials to remove redundancies, use common language/syntax.
 
 
-<<<<<<< HEAD
-
 =======
 TO DO: Develop the exercises and write the accompanying instructor notes (Paul)
->>>>>>> 6edd37e4caf1a7299fd1816214b8b162579089ca
