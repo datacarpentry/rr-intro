@@ -30,7 +30,7 @@ Participants have been asked to install R and RStudio prior to the workshop. It 
 * Welcome the participants and briefly go over the schedule for the 2-day workshop.
 * Remind them the mission statement and the tagline:
     * Mission statement: To Train researchers in the best practices and approaches of reproducible research and accelerate scientific progress
-    * Tagline: Accelerating science ... reproducibility **[TO DO: Find what the tagline we decided on was]**
+    * Tagline: Accelerating scientific progress through reproducible science. 
 * Review the case study:
     * **[TO DO - Dave is working on pinning this down. One idea is to provide a few and let the instructor choose.]**
 
