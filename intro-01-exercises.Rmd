@@ -10,7 +10,7 @@ output:
 
 ## Welcome!
 
-If you have not yes install R and RStudio, and there is still some time till the workshop begins, please go ahead and do so now. Alternatively, you'll get a chance to do this over the coffee break as well.
+If you have not yet installed R and RStudio, and there is still some time until the workshop begins, please go ahead and do so now. Alternatively, you'll get a chance to do this over the coffee break as well.
 
 * Mac:
     * Video for installing R and RStudio: https://www.youtube.com/watch?v=Ywj6yNfc5nM
