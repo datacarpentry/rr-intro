@@ -1,5 +1,5 @@
 ---
-title: 'Intro Session 2: Automation and Organizatio'
+title: 'Intro Session 2: Automation and Organization'
 author: ''
 date: ''
 output:
@@ -11,6 +11,7 @@ output:
 ## R is for Reproducibility
 
 **Why R?**
+
 * Programming language for data analysis
 * Free!
 * Open source
@@ -24,6 +25,7 @@ that it is an overgrown calculator:
 
 
 **Why not language X?**
+
 * There are a number of other great programming tools out there that can also
 be used to improve the reproducibility of your analysis
 * The key is to use some type of language that will allow you to automate
@@ -42,6 +44,7 @@ and document your analysis
 
 
 **You could just type into the command prompt...**
+
 * ... but that doesn't help much with documentation
 * ... but that doesn't help much with automation
 
@@ -49,6 +52,7 @@ and document your analysis
 **A better solution**
 
 With RStudio you can combine your programming and your documentation
+
 * RStudio gives you a single environment to combine your documentation and your
 analysis
 * It runs on top of R
@@ -63,6 +67,7 @@ workshop
 
 ## Summary
 Let's summarize what we've learned:
+
 * First and foremost, we learned that everyone struggles with reproducibility
   and that it is a hindrance to moving science forward
 
@@ -71,7 +76,8 @@ Let's summarize what we've learned:
   project will become more complex as we gather more data and ask more
   complicated questions.
 
-* In discussing:
+* In discussion:
+
   * ***Organization*** you will be given tools to organize your projects
     so that you don't have a single folder with hundreds of files
   * ***Documentation*** you will learn the difference between binary files
