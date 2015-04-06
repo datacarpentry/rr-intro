@@ -50,7 +50,7 @@ Catch everyone up with R/RStudio instructions
 
 ## Session 2:
 
-Provide RMarkdown approach to what's done in Session 1, and then demonstrate how this approach makes automation and organization easier.
+Provide RMarkdown approach to what's done in Session 1 (intro-01-template.Rmd), and then demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.
 
 
 =======
