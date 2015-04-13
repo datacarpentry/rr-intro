@@ -1,0 +1,61 @@
+---
+title: "Why R?"
+output: html_document
+---
+
+## R is for Reproducibility
+
+**Why R?**
+
+* Programming language for data analysis
+* Free!
+* Open source
+* Widely used and supported across all disciplines
+* Can be used on Windows, Mac OS X or Linux
+
+Show the learners a screen shot of R running from the terminal. Perhaps show
+that it is an overgrown calculator:
+
+![R Splash Screen Shot](img/RSplashScreen.png)
+
+
+**Why not language X?**
+
+* There are a number of other great programming tools out there that can also
+be used to improve the reproducibility of your analysis
+* The key is to use some type of language that will allow you to automate
+and document your analysis
+* Once you master one language you'll probably find it easier to learn another
+* Might ask learners what programming languages they already know with a show of
+  hands for...
+  * R
+  * Python
+  * Perl
+  * SQL
+  * Java
+  * C/C++
+* It would be good to jot down numbers to store as "data" for later usage.
+
+
+
+**You could just type into the command prompt...**
+
+* ... but that doesn't help much with documentation
+* ... but that doesn't help much with automation
+
+
+**A better solution**
+
+With RStudio you can combine your programming and your documentation
+
+* RStudio gives you a single environment to combine your documentation and your
+analysis
+* It runs on top of R
+* Gives you a bunch of really cool features that we'll explore throughout the
+workshop
+* Show the learners a screen shot of R running from the terminal. Perhaps replicate that it is an overgrown calculator and orient them to the different panes in the environment:
+
+![RStudio Splash Screen Shot](img/RStudioSplash.png)
+
+
+
