@@ -67,6 +67,8 @@ The goal of this walk through is to demonstrate how each of the goals of Organiz
 
 Key steps introduced:
 
+IMPORTANT: Emphasize that this exercise is NOT about understanding all the R commands, but rather getting the big picture of how using R in this way facilitates reproducible analyses.
+
 0. Demonstrate "good practice" for organizing data files and analysis documents (R markdown)
 1. How to read data from a file
 2. How to combine data from multiple data frames
