@@ -36,6 +36,8 @@ TO DO: See the Intro Session 1 materials to decide if instructions for R+RStudio
 ### Intro
 
 - Welcome + go over schedule
+    * Group discussion: 6 months from now can you or someone else go back to your project and understand what was going on? What types of methods do you use to document a project?
+    * Take notes on the board as to tools people use.
 - TO DO: See the case study wiki page at https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014/wiki/Irreproducible-Examples, and decide if any more instructors notes need to be developed to help instructors choose and discuss one or a few of these quickly
 
 ### Ex 1: Naive reproducibility
