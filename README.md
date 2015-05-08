@@ -5,6 +5,10 @@ rr-intro
 
 **Mine Çetinkaya-Rundel** ([@mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel)), Paul Magwene ([@pmagwene](https://github.com/pmagwene)), Pat Schloss ([pschloss](https://github.com/pschloss)), Kristina Riemer ([KristinaRiemer](https://github.com/KristinaRiemer))
 
+## TO DO before Duke Workshop:
+- Email language for installing / updating R & RStudio (to go out on Friday, May 8 or latest by Monday, May 11)
+- Check with organization about the data file and consistency
+
 ## Intro sessions:
 
 At the beginning of this workshop, participants should be able to
