@@ -37,7 +37,7 @@ Do not worry if you run into any trouble during the installation, we will have s
 
 **Testing:** Do whatever is appropriate for your OS to launch RStudio. You should get a window similar to the screenshot you see in the video [here](http://www.rstudio.com/products/rstudio/). Put your cursor in the pane labelled *Console*, which is where you interact with the live R process. Create a simple object with code like `x <- 2 * 4` (followed by enter or return). Then inspect the `x` object by typing `x` followed by enter or return. Obviously you should see the value 8 print to screen. If yes, you are good to go.
 
-**Add-on packages: **R is an extensible system and many people share useful code they have developed as a package via CRAN and github. To install a package from CRAN, for example the `ggplot2` package for data visualization (which we will use during the workshop) type `install.packages("ggplot2")` in your Console. This is one way of installing packages (there are others).
+**Add-on packages:** R is an extensible system and many people share useful code they have developed as a package via CRAN and github. To install a package from CRAN, for example the `ggplot2` package for data visualization (which we will use during the workshop) type `install.packages("ggplot2")` in your Console. This is one way of installing packages (there are others).
 
 ## Intro (20 min)
 
