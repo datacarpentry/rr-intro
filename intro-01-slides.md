@@ -33,10 +33,22 @@ Day 2
 - 15:00: Coffee
 - 16:30: Wrap-up
 
-Introduction to Reproducible Research
+Intro to Reproducible Research
 ========================================================
 
-- Recognize the problems that reproducible research helps address via a case study
+**Before coffee break:**
+- Getting to know you
+- **Case study**: Recognize the problems that reproducible research helps address via a case study
 - **Exercise I**: Identify pain points in getting your analysis to be reproducible
+
+* * *
+
+**After coffee break:**
 - Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown
 - **Exercise II**: The role of documentation, sharing, automation, and organization in making your research more reproducible
+
+Getting to know you...
+========================================================
+
+with respect to reproducibility
+
