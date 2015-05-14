@@ -5,10 +5,6 @@ rr-intro
 
 **Mine Çetinkaya-Rundel** ([@mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel)), Paul Magwene ([@pmagwene](https://github.com/pmagwene)), Pat Schloss ([pschloss](https://github.com/pschloss)), Kristina Riemer ([KristinaRiemer](https://github.com/KristinaRiemer))
 
-## TO DO before Duke Workshop:
-- Email language for installing / updating R & RStudio (to go out on Friday, May 8 or latest by Monday, May 11)
-- Check with organization about the data file and consistency
-
 ## Intro sessions:
 
 At the beginning of this workshop, participants should be able to
@@ -35,7 +31,7 @@ problems, specifically R/RStudio/RMarkdown.
 
 Participants install R+RStudio
 
-TO DO: See the Intro Session 1 materials to decide if instructions for R+RStudio installation are good enough or if they should be updated
+See Intro Session 1 materials for email template
 
 ### Intro
 
@@ -43,13 +39,11 @@ TO DO: See the Intro Session 1 materials to decide if instructions for R+RStudio
     * Group discussion: 6 months from now can you or someone else go back to your project and understand what was going on? What types of methods do you use to document a project?
     * Take notes on the board as to tools people use.
 
-- TO DO: See the case study wiki page at https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014/wiki/Irreproducible-Examples, and decide if any more instructors notes need to be developed to help instructors choose and discuss one or a few of these quickly.
+- Pick a case study or two from https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014/wiki/Irreproducible-Examples
 
 ### Ex 1: Naive reproducibility
 
 Data analysis task + share/reproduce + discuss. Outline is in the instructor notes (`intro-01-instr-notes.Rmd`).
-
-TO DO: Reproducibility checklist is at https://etherpad.mozilla.org/s4QrwICsxr. This still needs to be finalized intro a pre-workshop survey form, and more instructor notes may need to be developed to insert in the instructors note here.
 
 ## Coffee break:
 
@@ -57,9 +51,6 @@ Catch everyone up with R/RStudio instructions
 
 ## Session 2:
 
-Provide RMarkdown approach to what's done in Session 1 (intro-01-template.Rmd), and then demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.  Outline can be found in the instructor notes (`intro-02-instr-notes.Rmd`).
+- Provide RMarkdown approach to what's done in Session 1 (intro-01-template.Rmd), and then demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.  Outline can be found in the instructor notes (`intro-02-instr-notes.Rmd`).
 
-
-=======
-* TODO: Align session 1 and session 2 materials to remove redundancies, use common language/syntax.
-
+- Wrap up with reviewing the reproducibility checklist is at `checklist.md`.
