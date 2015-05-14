@@ -45,6 +45,7 @@ Intro to Reproducible Research
 
 **After coffee break:**
 - Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown
+- Revisit Exercise I with new tools
 - **Exercise II**: The role of documentation, sharing, automation, and organization in making your research more reproducible
 
 Getting to know you...
