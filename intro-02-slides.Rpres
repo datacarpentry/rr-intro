@@ -98,16 +98,22 @@ Goals of the next exercise
 
 **NOT** about understanding all the R commands, but **rather** getting the big picture of how using R in this way facilitates reproducible analyses
 
-Exercise 2: Dive deeper
+Exercise 2: Extending your analysis
 ========================================================
 
-1. Append the new data gapminder-seventies-and-eighties.csv and gapminder-nineties-and-later.csv to your existing data set. <br>*Be careful* as you do so, as the ordering of columns in the data set may not match between the different CSV files!
+1. Append the new data `gapminder-7080.csv` and `gapminder-90plus.csv` to your existing data set. <br>*Be careful* as you do so, as the ordering of columns in the data set may not match between the different CSV files!
 
 2. Create line plots of life expectancy over time for Canada, Mexico, and the United States that run from 1952 to 2007.<br>
 *Stretch goal:* In the same plot, add similar line plots for Cambodia, China, and Japan and Uganda, Egypt, and South Africa.
 
 3. Create a scatter plot depictcting GDP vs. life expectancy of countries in Europe for 2007. <br>
 *Stretch goal:* In the same plot, add another scatter of points for Asia, Africa, and the Americas, coloring the countries from each region (continent) with the same color.
+
+Exercise 2: Resources
+========================================================
+
+* Open `intro-02-template.Rmd` 
+* Click on *Knit HTML* to compile the document
 
 Exercise 2: Take aways
 ========================================================
