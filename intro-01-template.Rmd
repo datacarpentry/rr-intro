@@ -1,7 +1,5 @@
 ---
 title: 'Intro Session 1: Motivating reproducibility'
-author: ''
-date: ''
 output:
   html_document:
     fig_height: 3

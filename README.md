@@ -41,7 +41,7 @@ See Intro Session 1 materials for email template
 
 - Pick a case study or two from https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014/wiki/Irreproducible-Examples
 
-### Ex 1: Naive reproducibility
+### Ex 1: Motivating reproducibility
 
 Data analysis task + share/reproduce + discuss. Outline is in the instructor notes (`intro-01-instr-notes.Rmd`).
 
@@ -51,6 +51,10 @@ Catch everyone up with R/RStudio instructions
 
 ## Session 2:
 
-- Provide RMarkdown approach to what's done in Session 1 (intro-01-template.Rmd), and then demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.  Outline can be found in the instructor notes (`intro-02-instr-notes.Rmd`).
+- Provide RMarkdown approach to what's done in Session 1 (intro-01-template.Rmd)
+
+### Ex 2: Extending your analysis
+
+Demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.  Outline can be found in the instructor notes (`intro-02-instr-notes.Rmd`).
 
 - Wrap up with reviewing the reproducibility checklist is at `checklist.md`.

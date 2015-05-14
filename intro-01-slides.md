@@ -79,7 +79,7 @@ Bad spreadsheet merge kills depression paper, quick fix resurrects it
 
 Source: http://retractionwatch.com/2014/07/01/bad-spreadsheet-merge-kills-depression-paper-quick-fix-resurrects-it/
 
-Exercise 1: Naive reproducibility
+Exercise 1: Motivating reproducibility
 ========================================================
 
 This is a two-part exercise:

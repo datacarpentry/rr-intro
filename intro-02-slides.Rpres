@@ -70,6 +70,23 @@ Anatomy of RStudio
 ![RSplashScreen](img/RStudioSplash.png)
 </center>
 
+
+Anatomy of RStudio
+========================================================
+* Upper right: workspace and a history of the commands that you've previously entered
+
+* Lower right: Any plots that you generate + access to files, help, packages
+
+* Left: Console
+    * Every time you launch RStudio, it will have the same text at the top of the console telling you the version of R that you’re running. 
+    * Below that information is the prompt. 
+
+Revisit Exercise 1 
+========================================================
+
+* Open `intro-01-template.Rmd` 
+* Click on *Knit HTML* to compile the document
+
 Goals of the next exercise
 ========================================================
 
@@ -171,4 +188,3 @@ RC: Publication
 * Did you archive preprints of resulting papers in a public repository?
 * Did you release the underlying code and new data at the time of submitting a paper?
 * What mechanisms are in place to insure your project remain accessible and reproducible in 5 years?
-

@@ -1,11 +1,11 @@
 ---
-title: "Session 2 Exercises"
+title: 'Intro Session 2: Extending your analysis'
 output: html_document
 ---
 
 The analyses you and your collaborator carried out in the morning session were based just on data from 1950s and 60s. Luckily, you have other collaborators, and you've just received two new sets of data extending your analyses into the 70s and 80s, and the 1990s and later.   Your task will be to extend your previous analyses, incoporating these new data.
 
-## Extending Your Initial Analyses 
+## Extending your analysis
 
 ### Task 1 
 

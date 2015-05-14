@@ -1,8 +1,7 @@
 ---
-title: "Introduction, Session 2, Template"
+title: 'Intro Session 2: Extending your analysis'
 output: html_document
 ---
-
 
 # Task 1
 
