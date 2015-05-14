@@ -84,9 +84,9 @@ Exercise 1: Motivating reproducibility
 
 This is a two-part exercise:
 
-**Part 1:** Do and document
+**Part 1:** Analyze + document
 
-**Part 2:** Have a peer reproduce.
+**Part 2:** Swap + discuss
 
 Exercise 1 - Part 1
 ========================================================

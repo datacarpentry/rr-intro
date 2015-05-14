@@ -47,8 +47,8 @@ Do not worry if you run into any trouble during the installation, we will have s
 * Remind them the mission statement and the tagline:
     * Mission statement: To Train researchers in the best practices and approaches of reproducible research and accelerate scientific progress
     * Tagline: Accelerating scientific progress through reproducible science. 
-* Review the case study:
-    * **[TO DO - Dave is working on pinning this down. One idea is to provide a few and let the instructor choose.]**
+* Review the case study: 
+    * Pick a case study or two from https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014/wiki/Irreproducible-Examples
 
 ## Ex 1: Naive reproducibility (40 mins)
 
