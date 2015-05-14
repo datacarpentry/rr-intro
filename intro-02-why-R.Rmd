@@ -53,7 +53,7 @@ analysis
 * It runs on top of R
 * Gives you a bunch of really cool features that we'll explore throughout the
 workshop
-* Show the learners a screen shot of R running from the terminal. Perhaps replicate that it is an overgrown calculator and orient them to the different panes in the environment:
+* Show the learners a screen shot of RStudio and review the panes
 
 ![RStudio Splash Screen Shot](img/RStudioSplash.png)
 
