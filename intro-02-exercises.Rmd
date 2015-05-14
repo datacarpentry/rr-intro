@@ -9,7 +9,7 @@ The analyses you and your collaborator carried out in the morning session were b
 
 ### Task 1 
 
-**Goal**: Append the new data `gapminder-seventies-and-eighties.csv` and `gapminder-nineties-and-later.csv` to your existing data set.  
+**Goal**: Append the new data `gapminder-7080.csv` and `gapminder-90plus.csv` to your existing data set.  
 
   * Be careful as you do so, as the ordering of columns in the data set may not match between the different CSV files!
 
