@@ -1,4 +1,4 @@
-Reproducible Science Workshop
+Reproducible Science Workshop - Intro I
 ========================================================
 font-family: 'Helvetica'
 date: May 14, 2015
@@ -52,3 +52,90 @@ Getting to know you...
 
 with respect to reproducibility
 
+
+Why should we care?
+========================================================
+
+Examples of irreproducible research has caused significant issues
+
+
+Seizure study retracted after authors realize data got "terribly mixed"
+========================================================
+
+From the authors of **Low Dose Lidocaine for Refractory Seizures in Preterm Neonates**:
+
+*"The article has been retracted at the request of the authors. After carefully re-examining the data presented in the article, they identified that data of two different hospitals got terribly mixed. The published results cannot be reproduced in accordance with scientific and clinical correctness."*
+
+Source: http://retractionwatch.com/2013/02/01/seizure-study-retracted-after-authors-realize-data-got-terribly-mixed/
+
+Bad spreadsheet merge kills depression paper, quick fix resurrects it
+========================================================
+
+* The authors of a paper showing a link between immune response and depression requested a retraction after they realized they'd merged two spreadsheets with mismatching ID codes.
+
+* Original conclusion: Lower levels of CSF IL-6 were associated with current depression and with future depression [...].
+
+* Revised conclusion: Higher levels of CSF IL-6 and IL-8 were associated with current depression [...].
+
+Source: http://retractionwatch.com/2014/07/01/bad-spreadsheet-merge-kills-depression-paper-quick-fix-resurrects-it/
+
+Exercise 1: Naive reproducibility
+========================================================
+
+This is a two-part exercise:
+
+**Part 1:** Do and document
+
+**Part 2:** Have a peer reproduce.
+
+Exercise 1 - Part 1
+========================================================
+
+(~20 minutes)
+
+Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset.
+
+1. Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.<br><br>
+*Stretch goal:* Add lines for Mexico and US.
+
+2. Visualize the relationship between GDP and life expectancy for countries in Europe in the 1952.<br><br>
+*Stretch goal:* Add a line for 1967 in another color.
+
+Exercise 1 - Part 2
+========================================================
+
+(~20 minutes)
+
+Introduce yourself to your collaborator and tell them why you're here.
+
+1. Swap instructions/documentation with your collaborator, and try to reproduce their work without talking to each oher. If your collaborator does not have the software they need to reproduce your work, we encourage you to either help them install it or walk them through it on your computer in a way that would emulate the experience.
+
+2. Then, talk to each other about challenges you faced (or didn't face) or why you were or weren't able to reproduce their work.
+
+Exercise 1 - Wrap up
+========================================================
+
+* What tools did you use (Excel / R / Word / plain text etc.)?
+
+* Was your collaborator successful in reproducing your work?
+
+Exercise 1 - Wrap up
+========================================================
+
+* Have you ever tried to reproduce someone else's data analysis before?
+* Have you ever tried to reproduce your own work before?
+* What tools did you use and were you successful in reproducing your collaborator's work?
+* What made it easy/hard for reproducing your parners' work?
+* What would have to happen if you had to extend the analysis further?
+* If you caught a data error how easy/hard would it be to re-create the analysis?
+* What would happen if your collaborator is no longer available to walk you through their analysis?
+
+Coffee break
+========================================================
+
+<center>
+<br>
+![coffee](img/coffee_000000_264.png)
+<br>
+Let us know if we can help you with R/RStudio installation
+</center>
