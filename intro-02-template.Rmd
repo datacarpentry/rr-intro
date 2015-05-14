@@ -1,11 +1,14 @@
 ---
 title: 'Intro Session 2: Extending your analysis'
-output: html_document
+output:
+  html_document:
+    fig_height: 3
+    fig_width: 6
 ---
 
 # Task 1
 
-**Goal**: Append the new data `gapminder-seventies-and-eighties.csv` and and `gapminder-nineties-and-later.csv` to your existing data set.
+**Goal**: Append the new data `gapminder-7080.csv` and and `gapminder-90plus.csv` to your existing data set.
 
 ## Reading files
 
