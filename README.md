@@ -5,6 +5,10 @@ rr-intro
 
 **Mine Çetinkaya-Rundel** ([@mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel)), Paul Magwene ([@pmagwene](https://github.com/pmagwene)), Pat Schloss ([pschloss](https://github.com/pschloss)), Kristina Riemer ([KristinaRiemer](https://github.com/KristinaRiemer))
 
+## Lesson synopsis:
+
+In this session we will start by reviewing case studies of (lack of) reproducibility gone wrong. Then participants will work on two reproducibility exercises: first a simple data manipulation and analysis exercise using any software they generally work with and then the same exercise (and extensions to it) using `RMarkdown` in RStudio as a better alternative, highlighting how this approach makes documentation, organization, automation, and dissemination easier.  
+
 ## Intro sessions:
 
 At the beginning of this workshop, participants should be able to
