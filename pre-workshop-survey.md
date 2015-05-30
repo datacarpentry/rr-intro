@@ -1,82 +1,88 @@
-If anyone sees improvements that can be made to this, add to or change whatever as you see fit. 
+What is your current position?
 
-## Notes
+* Graduate student
+* Postdoctoral felow
+* Faculty
+* Staff
+* Other: _____________
 
-The Software Carpentry pre-workshop survey was used as inspiration and can be found [here] (https://docs.google.com/a/weecology.org/forms/d/1375KdWmSu2a6ZqU2xAfozlNJydFaZpoM2HXw60cDioo/viewform). The first few questions are directly from the survey. 
+Which of the following discipline(s) do you work in? 
+check all that apply
 
-My advisor said that SW Carpentry gets good survey participation rates by telling participants in the email containing the survey that they have to take the survey to confirm their spot in the workshop. That's something that we could possibly do also. They also explicitly mention how much time the survey will take, so 5-10 minutes, to further encourage people. 
+* Brain and neuroscience
+* Chemistry
+* Computer science
+* Earth sciences
+* Economics
+* Engineering
+* Humanities
+* Life sciences
+* Math
+* Medicine
+* Physics
+* Social sciences
+* Statistics
+* Other: _____________
 
-## Survey
+Which operating system will you use for the workshop?
 
-##### General
+* Windows
+* OS X
+* Linux
+* I do not know
+* Other: ______________
 
-Name: ______________
+Which of the methods below do you use to record progress on your work?
+check all that apply
 
-Email address: ______________
-
-What is your career stage?
-* [ ] Undergraduate
-* [ ] Graduate
-* [ ] Post-doc
-* [ ] Faculty
-* [ ] Industry
-* [ ] Other: _____________
-
-Which of the following discipline(s) do you work in? Check all that are applicable. 
-* [ ] Space sciences
-* [ ] Physics
-* [ ] Chemistry
-* [ ] Earth sciences (geology, oceanography, meteorology)
-* [ ] Life science (ecology, zoology, botany)
-* [ ] Life science (biology, genetics)
-* [ ] Brain and neurosciences
-* [ ] Medicine
-* [ ] Engineering
-* [ ] Computer science and electrical engineering
-* [ ] Statistics
-* [ ] Economics
-* [ ] Social sciences
-* [ ] Humanities
-* [ ] Math
-* [ ] Other: _____________
-
-What operating system is on the computer you will use for the workshop?
-* [ ] Windows
-* [ ] Apple OS X
-* [ ] Linux
-* [ ] Other: ______________
-* [ ] I do not know
-
-##### Documentation
-
-Which of the methods below do you use to record progress on your work? Check all that are applicable. 
-* [ ] Handwritten notes (e.g., lab notebook)
-* [ ] Computer notes (e.g., Word documents)
-* [ ] Online notes (e.g., Wiki)
-* [ ] Comments in scripts
-* [ ] Literate programming (e.g., R Markdown)
-
-##### Programming
+* Handwritten notes (e.g. a lab notebook)
+* Documents on your computer (e.g. Word, text files)
+* Online notes (e.g. Google Docs, wikis)
+* Comments in scripts
+* Literate programming (e.g. R markdown, iPython notebook)
+* Other: ______________
 
 How often do you currently program?
-* [ ] I have never programmed
-* [ ] I program less than once a year
-* [ ] I program several times a year
-* [ ] I program once a month
-* [ ] I program once a week or more
 
-##### Open science/reproducibility
+* I never program
+* Once per year or less
+* Several times per year
+* A few times per month
+* A few times per week
+* Every day
 
-How much of your data, analyses, and/or figures are available online for anyone to look at or use?
-* [ ] The entirety of my research
-* [ ] Most of the components of my research
-* [ ] Less than half of my research
-* [ ] None of my research
+What programming languages do you use regularly? *
+Check all that apply
+* Python
+* R
+* C / C++
+* Java
+* Perl
+* Other: ______________
 
-If you were to give someone all of the data and documentation for a project, how confident are you that they could produce your results and figures?
-* [ ] Very confident
-* [ ] Somewhat confident
-* [ ] Not very confident
-* [ ] Not confident
+How frequently do you make your code, data, and analyses publicly available?
+* Never
+* Rarely
+* Sometimes
+* Most of the time
+* Always
 
-##### Version control/organization
+If you were to give a colleague all of the data and documentation for a project, how confident are you that they could produce your results and figures?
+
+* Very confident
+* Confident
+* Somewhat confident
+* Not very confident
+* Not confident
+
+When you do share code / data, what motivates you to do so? *
+Check all that apply
+* Journal requirement
+* Funding agency requirement
+* Opinion of PI / supervisor
+* Opinion of colleagues
+* Other: ______________
+
+Why did you sign up for this workshop? 
+
+(open ended)
