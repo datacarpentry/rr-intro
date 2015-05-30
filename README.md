@@ -9,6 +9,13 @@ rr-intro
 
 In this session we will start by reviewing case studies of (lack of) reproducibility gone wrong. Then participants will work on two reproducibility exercises: first a simple data manipulation and analysis exercise using any software they generally work with and then the same exercise (and extensions to it) using `RMarkdown` in RStudio as a better alternative, highlighting how this approach makes documentation, organization, automation, and dissemination easier.  
 
+## Syllabus:
+
+* Recognize the problems that reproducible research helps address
+* Identify pain points in getting your analysis to be reproducible.
+* The role of documentation, sharing, automation, and organization in making your research more reproducible.
+* Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown.
+
 ## Intro sessions:
 
 At the beginning of this workshop, participants should be able to
