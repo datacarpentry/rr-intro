@@ -62,3 +62,17 @@ Catch everyone up with R/RStudio instructions
 Demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.  Outline can be found in the instructor notes (`intro-02-instr-notes.Rmd`).
 
 - Wrap up with reviewing the reproducibility checklist is at `checklist.md`.
+
+## Data attribution
+
+- [Gapminder data](http://www.gapminder.org/data/). [Gapminder data is licensed CC-BY 3.0](https://docs.google.com/document/pub?id=1POd-pBMc5vDXAmxrpGjPLaCSDSWuxX6FLQgq5DhlUhM#h.ul2gu2-uwathz).
+
+- Processed and subset (population size, life expectancy, GDP per
+  capita; only every 5 years only starting 1952, only complete records)
+  [Gapminder data as R package](https://github.com/jennybc/gapminder). The [data-raw](https://github.com/jennybc/gapminder/tree/master/data-raw) sub-directory reveals the journey from Gapminder.org's Excel workbooks to increasingly clean and tidy data.
+    - clean dataset can be located in R in the following way (after
+      installing the package):
+
+        ```R
+        pathToTsv <- system.file("gapminder.tsv", package = "gapminder")
+        ```
