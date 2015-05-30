@@ -3,6 +3,23 @@ Reproducible Science Workshop - Intro II
 font-family: 'Helvetica'
 date: May 14, 2015
 
+Exercise 1 - Wrap up
+========================================================
+
+* What tools did you use (Excel / R / Word / plain text etc.)?
+* Was your collaborator successful in reproducing your work?
+
+Exercise 1 - Wrap up
+========================================================
+
+* Have you ever tried to reproduce someone else's data analysis before?
+* Have you ever tried to reproduce your own work before?
+* What tools did you use and were you successful in reproducing your collaborator's work?
+* What made it easy/hard for reproducing your partners' work?
+* What would have to happen if you had to extend the analysis further?
+* If you caught a data error how easy/hard would it be to re-create the analysis?
+* What would happen if your collaborator is no longer available to walk you through their analysis?
+
 Intro I summary
 ========================================================
 
@@ -13,13 +30,13 @@ Intro I summary
 Four facets
 ========================================================
 
-* Organization: you will be given tools to organize your projects so that you don't have a single folder with hundreds of files
+* Documentation: difference between binary files (e.g. docx) and text, files and why text files are preferred for documentation, use markdown to document your workflow so that anyone can pick up your data and follow what you are doing
 
-* Documentation: you will learn the difference between binary files (e.g. docx) and text, files and why text files are preferred for documentation using a simple tool called markdown that you can use to write descriptions of your data and your workflow so that anyone can pick up your data and follow what you are doing
+* Organization: tools to organize your projects so that you don't have a single folder with hundreds of files
 
-* Automation: you will learn about the power of scripting in the R programming language and how you can integrate that into markdown to create automated data analyses
+* Automation: the power of scripting in the R programming language and how you can integrate that into markdown to create automated data analyses
 
-* Dissemination: you will see that publishing is not the end of your analysis, rather it is a way station towards your future research and the future research of others
+* Dissemination: publishing is not the end of your analysis, rather it is a way station towards your future research and the future research of others
 
 Toolkit
 ========================================================
@@ -106,7 +123,7 @@ Exercise 2: Extending your analysis
 2. Create line plots of life expectancy over time for Canada, Mexico, and the United States that run from 1952 to 2007.<br>
 *Stretch goal:* In the same plot, add similar line plots for Cambodia, China, and Japan and Uganda, Egypt, and South Africa.
 
-3. Create a scatter plot depictcting GDP vs. life expectancy of countries in Europe for 2007. <br>
+3. Create a scatter plot depicting GDP vs. life expectancy of countries in Europe for 2007. <br>
 *Stretch goal:* In the same plot, add another scatter of points for Asia, Africa, and the Americas, coloring the countries from each region (continent) with the same color.
 
 Exercise 2: Resources
@@ -175,8 +192,8 @@ RC: Automation (1/2)
 * Is the project under the control of a makefile? Could one run `make clean; make`?
 * How long would it take to rebuild your directory system if your hard drive failed?
 * Is manual manipulation of data kept to a minimum?
-* If manual manipulation is required, is there sufficient documentation to re-do the manipulation
-* Does data processing make use of open software code
+* If manual manipulation is required, is there sufficient documentation to re-do the manipulation?
+* Does data processing make use of open software code?
 
 RC: Automation (2/2)
 ========================================================

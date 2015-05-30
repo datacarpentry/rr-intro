@@ -92,20 +92,16 @@ This is a two-part exercise:
 Exercise 1 - Part 1
 ========================================================
 
-(~20 minutes)
+Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`)
 
-Complete the following tasks and write instructions/documentation for your collaborator to reproduce your work starting with the original dataset.
-
-1. Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.<br><br>
+1. Visualize life expectancy over time for Canada in the 1950s and 1960s using a line plot.<br>
 *Stretch goal:* Add lines for Mexico and US.
 
-2. Visualize the relationship between GDP and life expectancy for countries in Europe in the 1952.<br><br>
+2. Visualize the relationship between GDP and life expectancy for countries in Europe in 1952.<br>
 *Stretch goal:* Add a line for 1967 in another color.
 
 Exercise 1 - Part 2
 ========================================================
-
-(~20 minutes)
 
 Introduce yourself to your collaborator and tell them why you're here.
 
@@ -138,5 +134,6 @@ Coffee break
 <br>
 ![coffee](img/coffee_000000_264.png)
 <br>
-Let us know if we can help you with R/RStudio installation
+Put a pink sticky on your laptop 
+for help with R/RStudio installation
 </center>
