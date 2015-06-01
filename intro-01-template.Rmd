@@ -8,7 +8,7 @@ output:
 
 This RMarkdown file contains R code you can use to complete the exercises from Intro Session 1. To see the output simply click on Knit HTML above. This might prompt you to install and load some required packages, specifically `knitr`. Just click yes, and the a document including this narrative, the R code, and figures should pop up.
 
-## Data: 
+## Data:
 
 The `read.csv` function is used to read the data into R. Note that the argument provided for this function is the complete path that leads to the dataset from your current working directory (where this RMarkdown file is located). Also note that this is provided as a character string, hence in quotation marks.
 
@@ -18,14 +18,20 @@ gap_5060 = read.csv("data/gapminder-5060.csv")
 
 ## Packages:
 
-We will use the `ggplot2` package to make the plots for these exercises. This is not the only way to make this plot, but the `ggplot2` package has some aesthetic defaults that makes it attractive. 
+We will use the `ggplot2` package to make the plots for these exercises. This is not the only way to make this plot, but the `ggplot2` package has some aesthetic defaults that makes it attractive.
 
-The first time you need a package you need to first download and install it. The function below checks to see if the package is already installed, and if not it installs it. (Note: If you are a brand new R used the code below might be a bit much at once, but not understanding it fully will not prevent you from following on with the rest of the analysis.)
+The first time you need a package you need to first download and install it. The
+function `require()` tests whether a package can be loaded (and gets loaded if
+it is available locally). The code below checks if the package is installed, if
+not, it gets installed (and loaded).
 
-```{r}
-if (!("ggplot2" %in% names(installed.packages()[,"Package"]))) {
-  install.packages("ggplot2")
-  }
+```{r, eval=FALSE}
+## this needs to be run interactively, otherwise the package
+## doesn't get installed in the appropriate library.
+if (!require("ggplot2")) {
+        install.packages("ggplot2")
+        library("ggplot2")
+}
 ```
 
 Then, we load the package:
@@ -36,11 +42,11 @@ library(ggplot2)
 
 If you'd like to learn more about `ggplot2`, we recommend visiting http://ggplot2.org/, which includes links to documentation about the functions in this package as well as external resources.
 
-## Task 1: 
+## Task 1:
 
 Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
 
-* Create a subset of `gap_5060` for Canada: 
+* Create a subset of `gap_5060` for Canada:
 
 The first argument is the dataset, and the second argument is the logical expression that you want to use for subsetting. Note that the "double equals" in R, `==`, reads as "if it is equal to".
 ```{r}
@@ -57,7 +63,7 @@ ggplot(data = ca_5060, aes(x = year, y = lifeExp)) + # creates the first layer
   geom_line()                                        # add line
 ```
 
-### Task 1 - Stretch goal: 
+### Task 1 - Stretch goal:
 
 Add lines for Mexico and US in the 1950s and 1960s.
 
@@ -77,12 +83,12 @@ northamer_5060 = subset(gap_5060, country %in% countries)
 
 The only difference in the code below is `colour = country`, since we want a different color for each country.
 ```{r}
-ggplot(data = northamer_5060, 
+ggplot(data = northamer_5060,
        aes(x = year, y = lifeExp, colour = country)) + # add colour by country
-  geom_line()                                          # add line 
+  geom_line()                                          # add line
 ```
 
-## Task 2: 
+## Task 2:
 
 Visualize the relationship between GDP and life expectancy for countries in Europe in 1952 using a scatter plot.
 
@@ -97,7 +103,7 @@ ggplot(data = eu_52, aes(x = gdpPercap, y = lifeExp)) +
   geom_point()                                          # add points
 ```
 
-### Task 2 - Stretch goal: 
+### Task 2 - Stretch goal:
 
 Add year 1967 in another color.
 
