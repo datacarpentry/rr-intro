@@ -18,33 +18,23 @@ gap_5060 = read.csv("data/gapminder-5060.csv")
 
 ## Packages:
 
-We will use the `ggplot2` package to make the plots for these exercises. This is not the only way to make this plot, but the `ggplot2` package has some aesthetic defaults that makes it attractive.
+We will use the `ggplot2` package to make the plots for these exercises. This is not 
+the only way to make this plot, but the `ggplot2` package has some aesthetic defaults 
+that makes it attractive.
 
-The first time you need a package you need to first download and install it. The
-function `require()` tests whether a package can be loaded (and gets loaded if
-it is available locally). The code below checks if the package is installed, if
-not, it gets installed (and loaded).
+At this point you should have downloaded this package using the `install.packages` function.
 
-```{r, eval=FALSE}
-## this needs to be run interactively, otherwise the package
-## doesn't get installed in the appropriate library.
-if (!require("ggplot2")) {
-        install.packages("ggplot2")
-        library("ggplot2")
-}
-```
-
-Then, we load the package:
+Now we need to explicitly load the package:
 
 ```{r}
-library(ggplot2)
+library("ggplot2")
 ```
 
-If you'd like to learn more about `ggplot2`, we recommend visiting http://ggplot2.org/, which includes links to documentation about the functions in this package as well as external resources.
+If you'd like to learn more about `ggplot2`, visit http://ggplot2.org/, which includes links to documentation about the functions in this package as well as external resources.
 
 ## Task 1:
 
-Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
+**Goal:** Visualize the relationship between life expectancy over time for Canada in the 1950s and 1960s using a line plot.
 
 * Create a subset of `gap_5060` for Canada:
 
@@ -65,7 +55,7 @@ ggplot(data = ca_5060, aes(x = year, y = lifeExp)) + # creates the first layer
 
 ### Task 1 - Stretch goal:
 
-Add lines for Mexico and US in the 1950s and 1960s.
+**Goal:** Add lines for Mexico and US in the 1950s and 1960s.
 
 * Create a subset of `gap_5060` for Canada, Mexico, and US:
 
@@ -90,7 +80,7 @@ ggplot(data = northamer_5060,
 
 ## Task 2:
 
-Visualize the relationship between GDP and life expectancy for countries in Europe in 1952 using a scatter plot.
+**Goal:** Visualize the relationship between GDP and life expectancy for countries in Europe in 1952 using a scatter plot.
 
 * Create a subset of `gap_5060` for Europe in 1952:
 ```{r}
@@ -105,7 +95,7 @@ ggplot(data = eu_52, aes(x = gdpPercap, y = lifeExp)) +
 
 ### Task 2 - Stretch goal:
 
-Add year 1967 in another color.
+**Goal:** Add year 1967 in another color.
 
 * Create a subset of `gap_5060` for Europe in 1952 and 1967:
 ```{r}
