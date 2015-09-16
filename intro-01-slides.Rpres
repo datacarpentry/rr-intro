@@ -1,7 +1,6 @@
 Reproducible Science Workshop - Intro I
 ========================================================
 font-family: 'Helvetica'
-date: 'enter date'
 
 
 Overview
@@ -9,7 +8,8 @@ Overview
 
 Tagline: Accelerating scientific progress through reproducible science
 
-Mission: To train researchers in the best practices and approaches of reproducible research and accelerate scientific progress.
+Mission: To train researchers in the best practices and approaches of 
+reproducible research and accelerate scientific progress.
 
 
 Schedule
@@ -41,7 +41,8 @@ Intro to Reproducible Research
 
 **Before coffee break:**
 - Getting to know you
-- **Case study**: Recognize the problems that reproducible research helps address via a case study
+- **Case study**: Recognize the problems that reproducible research helps address 
+via a case study
 - **Exercise I**: Identify pain points in getting your analysis to be reproducible
 
 * * *
@@ -49,7 +50,8 @@ Intro to Reproducible Research
 **After coffee break:**
 - Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown
 - Revisit Exercise I with new tools
-- **Exercise II**: The role of documentation, sharing, automation, and organization in making your research more reproducible
+- **Exercise II**: The role of documentation, sharing, automation, and 
+organization in making your research more reproducible
 
 
 Getting to know you...
@@ -67,17 +69,17 @@ Examples of irreproducible research has caused significant issues
 Science retracts gay marriage paper without agreement of lead author
 ========================================================
 
-* Science retracted a study of how canvassers can sway people's opinions about 
+- Science retracted a study of how canvassers can sway people's opinions about 
 gay marriage.
 
-* Science Editor-in-Chief: Original survey data not made available for independent
-reproduction of results + Survey incentives misrepresented + Sponsorship statement 
-false
+- Science Editor-in-Chief: Original survey data not made available for independent
+reproduction of results + Survey incentives misrepresented + Sponsorship 
+statement false
 
-* Two Berkeley grad students attempted to replicate the study and discovered that 
+- Two Berkeley grad students attempted to replicate the study and discovered that 
 the data must have been faked.
 
-* Methods we'll discuss today can't prevent this, but they can make it easier to 
+- Methods we'll discuss today can't prevent this, but they can make it easier to 
 discover such issues.
 
 Source: 
@@ -89,7 +91,9 @@ Seizure study retracted after authors realize data got "terribly mixed"
 
 From the authors of **Low Dose Lidocaine for Refractory Seizures in Preterm Neonates**:
 
-*"The article has been retracted at the request of the authors. After carefully re-examining the data presented in the article, they identified that data of two different hospitals got terribly mixed. The published results cannot be reproduced in accordance with scientific and clinical correctness."*
+*"The article has been retracted at the request of the authors. After carefully 
+re-examining the data presented in the article, they identified that data of two 
+different hospitals got terribly mixed. The published results cannot be reproduced in accordance with scientific and clinical correctness."*
 
 Source: http://retractionwatch.com/2013/02/01/seizure-study-retracted-after-authors-realize-data-got-terribly-mixed/
 
@@ -97,13 +101,13 @@ Source: http://retractionwatch.com/2013/02/01/seizure-study-retracted-after-auth
 Bad spreadsheet merge kills depression paper, quick fix resurrects it
 ========================================================
 
-* The authors informed the journal that the merge of lab results and other survey data 
-used in the paper resulted in an error regarding the identification codes.
+- The authors informed the journal that the merge of lab results and other survey 
+data used in the paper resulted in an error regarding the identification codes.
 
-* **Original conclusion:** Lower levels of CSF IL-6 were associated with current 
+- **Original conclusion:** Lower levels of CSF IL-6 were associated with current 
 depression and with future depression [...].
 
-* **Revised conclusion:** Higher levels of CSF IL-6 and IL-8 were associated with 
+- **Revised conclusion:** Higher levels of CSF IL-6 and IL-8 were associated with 
 current depression [...].
 
 Source: 
@@ -145,13 +149,14 @@ Exercise 1 - Part 2
 
 Introduce yourself to your collaborator and tell them why you're here.
 
-1. Swap instructions/documentation with your collaborator, and try to reproduce their 
-work without talking to each oher. If your collaborator does not have the software 
-they need to reproduce your work, we encourage you to either help them install it or 
-walk them through it on your computer in a way that would emulate the experience.
+1. Swap instructions/documentation with your collaborator, and try to reproduce 
+their work without talking to each oher. If your collaborator does not have the 
+software they need to reproduce your work, we encourage you to either help them 
+install it or walk them through it on your computer in a way that would emulate 
+the experience.
 
-2. Then, talk to each other about challenges you faced (or didn't face) or why you 
-were or weren't able to reproduce their work.
+2. Then, talk to each other about challenges you faced (or didn't face) or why 
+you were or weren't able to reproduce their work.
 
 
 Exercise 1 - Wrap up
@@ -167,11 +172,13 @@ Exercise 1 - Wrap up
 
 * Have you ever tried to reproduce someone else's data analysis before?
 * Have you ever tried to reproduce your own work before?
-* What tools did you use and were you successful in reproducing your collaborator's work?
+* What tools did you use and were you successful in reproducing your 
+collaborator's work?
 * What made it easy/hard for reproducing your parners' work?
 * What would have to happen if you had to extend the analysis further?
 * If you caught a data error how easy/hard would it be to re-create the analysis?
-* What would happen if your collaborator is no longer available to walk you through their analysis?
+* What would happen if your collaborator is no longer available to walk you 
+through their analysis?
 
 
 Coffee break
