@@ -1,10 +1,16 @@
-Reproducible Science Workshop - Intro I
-========================================================
-font-family: 'Helvetica'
+---
+title: 'Reproducible Science Workshop - Intro'
+author: 'Reproducible Science Curriculum'
+date: ''
+output:
+  ioslides_presentation:
+    highlight: pygments
+    widescreen: yes
+---
 
+# Overview
 
-Overview
-========================================================
+## Tagline and mission
 
 Tagline: Accelerating scientific progress through reproducible science
 
@@ -12,8 +18,7 @@ Mission: To train researchers in the best practices and approaches of
 reproducible research and accelerate scientific progress.
 
 
-Intro to Reproducible Research
-========================================================
+## Intro to Reproducible Research outline
 
 - Getting to know you
 - Recognize the problems that reproducible research helps address 
@@ -23,20 +28,15 @@ via a case studies
 - **Demo**: R / RStudio / RMarkdown toolkit for reproducibile data analysis
 
 
-Getting to know you...
-========================================================
+## Getting to know you...
 
 with respect to reproducibility
 
 
-Why should we care?
-========================================================
 
-Examples of irreproducible research has caused significant issues
+# Why should we care about reproducibility?
 
-
-Science retracts gay marriage paper without agreement of lead author
-========================================================
+## Science retracts gay marriage paper without agreement of lead author
 
 - Science retracted a study of how canvassers can sway people's opinions about 
 gay marriage.
@@ -51,24 +51,27 @@ the data must have been faked.
 - Methods we'll discuss today can't prevent this, but they can make it easier to 
 discover such issues.
 
+<small>
 Source: 
 http://news.sciencemag.org/policy/2015/05/science-retracts-gay-marriage-paper-without-lead-author-s-consent
+</small>
 
 
-Seizure study retracted after authors realize data got "terribly mixed"
-========================================================
+## Seizure study retracted after authors realize data got "terribly mixed"
 
 From the authors of **Low Dose Lidocaine for Refractory Seizures in Preterm Neonates**:
 
 *"The article has been retracted at the request of the authors. After carefully 
 re-examining the data presented in the article, they identified that data of two 
-different hospitals got terribly mixed. The published results cannot be reproduced in accordance with scientific and clinical correctness."*
+different hospitals got terribly mixed. The published results cannot be reproduced in
+accordance with scientific and clinical correctness."*
 
+<small>
 Source: http://retractionwatch.com/2013/02/01/seizure-study-retracted-after-authors-realize-data-got-terribly-mixed/
+</small>
 
 
-Bad spreadsheet merge kills depression paper, quick fix resurrects it
-========================================================
+## Bad spreadsheet merge kills depression paper, quick fix resurrects it
 
 - The authors informed the journal that the merge of lab results and other survey 
 data used in the paper resulted in an error regarding the identification codes.
@@ -83,8 +86,10 @@ Source:
 http://retractionwatch.com/2014/07/01/bad-spreadsheet-merge-kills-depression-paper-quick-fix-resurrects-it/
 
 
-Exercise 1: Motivating reproducibility
-========================================================
+
+# Exercise: Motivating reproducibility
+
+## Exercise: Motivating reproducibility
 
 This is a two-part exercise:
 
@@ -93,8 +98,7 @@ This is a two-part exercise:
 **Part 2:** Swap + discuss
 
 
-Exercise 1 - Part 1
-========================================================
+## Part 1: Analyze + document
 
 Complete the following tasks and **write instructions / documentation** for your 
 collaborator to reproduce your work starting with the original dataset 
@@ -111,24 +115,22 @@ as `999999`, it should actually be `69.96`. Make this correction.
 *Stretch goal:* Add lines for Mexico and US.
 
 
-Exercise 1 - Part 2
-========================================================
+## Part 2: Swap + discuss
 
 Introduce yourself to your collaborator and tell them why you're here.
 
 1. Swap instructions / documentation with your collaborator, and try to reproduce 
 their work, first **without talking to each oher**. 
 If your collaborator does not have the software they need to reproduce your work, we 
-encourage you to either help them install it or walk them through it on your computer in a 
-way that would emulate the experience. (Remember, this could be part of the 
+encourage you to either help them install it or walk them through it on your computer 
+in a way that would emulate the experience. (Remember, this could be part of the 
 irreproducibility problem!)
 
 2. Then, talk to each other about challenges you faced (or didn't face) or why 
 you were or weren't able to reproduce their work.
 
 
-Exercise 1 - Reflection
-========================================================
+## Reflection
 
 - What tools did you use for the data analysis? For documentation?
 - Were you successful in reproducing each others' work?
@@ -142,8 +144,7 @@ Exercise 1 - Reflection
     - you had to revert back to the original dataset?
 
 
-Coffee break
-========================================================
+## Coffee break
 
 <center>
 <br>
