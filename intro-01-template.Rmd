@@ -40,6 +40,7 @@ If you'd like to learn more about `ggplot2`, visit http://ggplot2.org/, which in
 
 The first argument is the dataset, and the second argument is the logical expression that you want to use for subsetting. Note that the "double equals" in R, `==`, reads as "if it is equal to".
 ```{r}
+#ca_5060 = subset(gap_5060, country == "Canada")
 ca_5060 = subset(gap_5060, country == "Canada")
 ```
 
