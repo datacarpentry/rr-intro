@@ -12,46 +12,15 @@ Mission: To train researchers in the best practices and approaches of
 reproducible research and accelerate scientific progress.
 
 
-Schedule
-========================================================
-
-Day 1
-
-- 09:00: Introduction to Reproducible Research
-- 10:30: Coffee / R&RStudio install catch up
-- 12:30: Lunch break
-- 13:30: Organizing your project to facilitate Reproducible Research
-- 15:00: Coffee
-- 17:00: Wrap-up
-
-* * *
-
-Day 2
-
-- 09:00: Automating your workflows
-- 10:30: Coffee
-- 12:30: Lunch break
-- 13:30: Sharing and publishing your research workflow
-- 15:00: Coffee
-- 16:30: Wrap-up
-
-
 Intro to Reproducible Research
 ========================================================
 
-**Before coffee break:**
 - Getting to know you
-- **Case study**: Recognize the problems that reproducible research helps address 
-via a case study
-- **Exercise I**: Identify pain points in getting your analysis to be reproducible
-
-* * *
-
-**After coffee break:**
-- Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown
-- Revisit Exercise I with new tools
-- **Exercise II**: The role of documentation, sharing, automation, and 
-organization in making your research more reproducible
+- Recognize the problems that reproducible research helps address 
+via a case studies
+- **Exercise**: Identify pain points in getting your analysis to be reproducible
+- Introduce tools that address these pain points
+- **Demo**: R / RStudio / RMarkdown toolkit for reproducibile data analysis
 
 
 Getting to know you...
@@ -127,21 +96,19 @@ This is a two-part exercise:
 Exercise 1 - Part 1
 ========================================================
 
-Complete the following tasks and write instructions/documentation for your 
-collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`)
+Complete the following tasks and **write instructions / documentation** for your 
+collaborator to reproduce your work starting with the original dataset 
+(`data/gapminder-5060.csv`).
 
 1. Visualize life expectancy over time for Canada in the 1950s and 1960s using 
-a line plot.<br>
+a line plot.
+
+2. Something is clearly wrong with this plot! Turns out there's a data error 
+in the data file: life expectancy for Canada in the year 1967 is coded
+as `999999`, it should actually be `69.96`. Make this correction.
+
+3. Visualize life expectancy over time for Canada again, with the corrected data.<br>
 *Stretch goal:* Add lines for Mexico and US.
-
-2. Visualize the relationship between GDP and life expectancy for countries in 
-Europe in 1952.<br>
-*Stretch goal:* Add a line for 1967 in another color.
-
-<center>
-Put a pink sticky on your laptop <br>
-for help with R/RStudio installation
-</center>
 
 
 Exercise 1 - Part 2
@@ -149,36 +116,30 @@ Exercise 1 - Part 2
 
 Introduce yourself to your collaborator and tell them why you're here.
 
-1. Swap instructions/documentation with your collaborator, and try to reproduce 
-their work without talking to each oher. If your collaborator does not have the 
-software they need to reproduce your work, we encourage you to either help them 
-install it or walk them through it on your computer in a way that would emulate 
-the experience.
+1. Swap instructions / documentation with your collaborator, and try to reproduce 
+their work, first **without talking to each oher**. 
+If your collaborator does not have the software they need to reproduce your work, we 
+encourage you to either help them install it or walk them through it on your computer in a 
+way that would emulate the experience. (Remember, this could be part of the 
+irreproducibility problem!)
 
 2. Then, talk to each other about challenges you faced (or didn't face) or why 
 you were or weren't able to reproduce their work.
 
 
-Exercise 1 - Wrap up
+Exercise 1 - Reflection
 ========================================================
 
-* What tools did you use (Excel / R / Word / plain text etc.)?
-
-* Was your collaborator successful in reproducing your work?
-
-
-Exercise 1 - Wrap up
-========================================================
-
-* Have you ever tried to reproduce someone else's data analysis before?
-* Have you ever tried to reproduce your own work before?
-* What tools did you use and were you successful in reproducing your 
-collaborator's work?
-* What made it easy/hard for reproducing your parners' work?
-* What would have to happen if you had to extend the analysis further?
-* If you caught a data error how easy/hard would it be to re-create the analysis?
-* What would happen if your collaborator is no longer available to walk you 
-through their analysis?
+- What tools did you use for the data analysis? For documentation?
+- Were you successful in reproducing each others' work?
+    - What would happen if your collaborator is no longer available to 
+    walk you through their analysis?
+- What made it easy / hard for reproducing your partners' work?
+- What would have to happen if 
+    - you had to swap out the dataset or extend the analysis further?
+    - you caught further data errors and had to re-create the analysis
+    with corrections?
+    - you had to revert back to the original dataset?
 
 
 Coffee break
@@ -188,6 +149,6 @@ Coffee break
 <br>
 ![coffee](img/coffee_000000_264.png)
 <br>
-Put a pink sticky on your laptop <br>
-for help with R/RStudio installation
+Put a sticky on your laptop <br>
+for help with software set up
 </center>
