@@ -1,0 +1,103 @@
+---
+title: "Intro II: Reproducibility toolkit"
+author: "Reproducible Science Workshop"
+date: ""
+output:
+  ioslides_presentation:
+    highlight: pygments
+    widescreen: yes
+---
+
+# Reproduciblility toolkit
+
+## R + RStudio
+
+<div class="columns-2">
+![R](img/Rlogo-1.png)
+
+![RStudio](img/RStudio-Logo-Blue-Gradient.png)
+</div>
+
+
+## Why R?
+
+<div class="columns-2">
+- Programming language for data analysis
+- Free!
+- Open source
+- Widely used and supported across all disciplines
+- Can be used on Windows, Mac OS X, or Linux
+
+![RSplashScreen](img/RSplashScreen.png)
+</div>
+
+
+## Why not language X?
+
+- There are a number of other great programming tools out there that can also be 
+used to improve the reproducibility of your analysis
+
+- The key is to use some type of language that will allow you to automate and 
+document your analysis
+
+- Once you master one language you'll probably find it easier to learn another
+
+## Why RStudio?
+
+<div class="columns-2">
+- Runs on top of R
+- Single environment for documentation and analysis with markdown support
+- Bunch of really cool features that we'll explore throughout the workshop
+
+![RSplashScreen](img/RStudioSplash.png)
+</div>
+
+## Anatomy of RStudio
+
+<div class="columns-2">
+- Left: Console
+    - Text on top at launch: version of R that you’re running
+    - Below that is the prompt
+- Upper right: Workspace and command history
+- Lower right: Plots, access to files, help, packages, data viewer
+
+![RSplashScreen](img/RStudioSplash.png)
+</div>
+
+## R Packages
+
+- Packages are the fundamental units of reproducible R code. They include reusable R
+functions, the documentation that describes how to use them, and (often) sample data.
+(From: http://r-pkgs.had.co.nz)
+
+- We will use the `ggplot2` package for plots and `dplyr` for data wrangling in this
+session.
+
+- If you have not yet done so, install these packages by running the following
+in the Console:
+```{r eval=FALSE}
+install.packages("ggplot2")
+install.packages("dplyr")
+```
+    
+- This is just one way of installing a package, there is also a GUI approach in 
+the Packages pane
+
+# Demo
+
+## RMarkdown demo of earlier exercise
+
+[left here, need to continue writing the demo section]
+
+
+# Coffee break
+
+## Coffee break
+
+<center>
+<br>
+![coffee](img/coffee_000000_264.png)
+<br>
+Put a sticky on your laptop <br>
+for help with software set up
+</center>
