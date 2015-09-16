@@ -1,0 +1,8 @@
+.boxed {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #808080;
+    padding: 10px 10px;
+    font-size: 10pt;
+    background-color: rgba(128, 128, 128, 0.2);
+}
