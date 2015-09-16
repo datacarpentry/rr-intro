@@ -1,7 +1,7 @@
 ---
-title: 'Reproducible Science Workshop - Intro'
-author: 'Reproducible Science Curriculum'
-date: ''
+title: "Intro I: Motivating reproducibility"
+author: "Reproducible Science Workshop"
+date: ""
 output:
   ioslides_presentation:
     highlight: pygments
@@ -25,7 +25,7 @@ reproducible research and accelerate scientific progress.
 via a case studies
 - **Exercise**: Identify pain points in getting your analysis to be reproducible
 - Introduce tools that address these pain points
-- **Demo**: R / RStudio / RMarkdown toolkit for reproducibile data analysis
+- **Demo**: Computational toolkit for reproducibile data analysis
 
 
 ## Getting to know you...
@@ -82,9 +82,10 @@ depression and with future depression [...].
 - **Revised conclusion:** Higher levels of CSF IL-6 and IL-8 were associated with 
 current depression [...].
 
+<small>
 Source: 
 http://retractionwatch.com/2014/07/01/bad-spreadsheet-merge-kills-depression-paper-quick-fix-resurrects-it/
-
+</small>
 
 
 # Exercise: Motivating reproducibility
@@ -132,24 +133,48 @@ you were or weren't able to reproduce their work.
 
 ## Reflection
 
-- What tools did you use for the data analysis? For documentation?
+- What tools did you use (Excel / R / Python / Word / plain text etc.)?
 - Were you successful in reproducing each others' work?
-    - What would happen if your collaborator is no longer available to 
-    walk you through their analysis?
+
+<br>
+
+- What would happen if your collaborator is no longer available to walk you through 
+their analysis?
 - What made it easy / hard for reproducing your partners' work?
 - What would have to happen if 
     - you had to swap out the dataset or extend the analysis further?
     - you caught further data errors and had to re-create the analysis
     with corrections?
     - you had to revert back to the original dataset?
+    
 
+## Summary
 
-## Coffee break
+- Everyone struggles with reproducibility and it is a hindrance to moving 
+science forward
 
-<center>
-<br>
-![coffee](img/coffee_000000_264.png)
-<br>
-Put a sticky on your laptop <br>
-for help with software set up
-</center>
+- Evan with a fairly simple analysis challenges were faced in four main areas:
+organization, documentation, automation, and dissemination
+
+- Over the two day workshop, data analysis tasks will become more complex as we 
+gather more data and ask more complicated questions, so we need better tools and 
+workflows to combat issues arising in these areas
+
+# Four facets of reproducibility
+
+## Four facets of reproducibility
+
+1. **Documentation:** difference between binary files (e.g. docx) and text files and
+why text files are preferred for documentation
+    - *Protip:* Use markdown to document your workflow so that anyone can pick up your
+    data and follow what you are doing
+    - *Protip:* Use literate programming so that your analysis and your results are
+    tightly connected, or better yet, unseperable
+
+2. **Organization:** tools to organize your projects so that you don't have a single 
+folder with hundreds of files
+
+3. **Automation:** the power of scripting to create automated data analyses
+
+4. **Dissemination:** publishing is not the end of your analysis, rather it is a way 
+station towards your future research and the future research of others

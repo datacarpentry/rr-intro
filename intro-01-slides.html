@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Reproducible Science Workshop - Intro I</title>
+  <title>Intro I: Motivating reproducibility</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,7 +25,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Reproducible Science Workshop - Intro I',
+                title: 'Intro I: Motivating reproducibility',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -35,7 +35,7 @@
       // Author information
       presenters: [
             {
-        name:  'Reproducible Science Curriculum' ,
+        name:  'Reproducible Science Workshop' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -106,7 +106,7 @@
 <li>Recognize the problems that reproducible research helps address via a case studies</li>
 <li><strong>Exercise</strong>: Identify pain points in getting your analysis to be reproducible</li>
 <li>Introduce tools that address these pain points</li>
-<li><strong>Demo</strong>: R / RStudio / RMarkdown toolkit for reproducibile data analysis</li>
+<li><strong>Demo</strong>: Computational toolkit for reproducibile data analysis</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Getting to know you&#8230;</h2></hgroup><article  id="getting-to-know-you...">
@@ -176,12 +176,14 @@
 </article></slide><slide class=''><hgroup><h2>Reflection</h2></hgroup><article  id="reflection">
 
 <ul>
-<li>What tools did you use for the data analysis? For documentation?</li>
-<li>Were you successful in reproducing each others&#39; work?
+<li>What tools did you use (Excel / R / Python / Word / plain text etc.)?</li>
+<li>Were you successful in reproducing each others&#39; work?</li>
+</ul>
+
+<p><br></p>
 
 <ul>
 <li>What would happen if your collaborator is no longer available to walk you through their analysis?</li>
-</ul></li>
 <li>What made it easy / hard for reproducing your partners&#39; work?</li>
 <li>What would have to happen if
 
@@ -192,13 +194,29 @@
 </ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Coffee break</h2></hgroup><article  id="coffee-break">
+</article></slide><slide class=''><hgroup><h2>Summary</h2></hgroup><article  id="summary">
 
-<center>
+<ul>
+<li><p>Everyone struggles with reproducibility and it is a hindrance to moving science forward</p></li>
+<li><p>Evan with a fairly simple analysis challenges were faced in four main areas: organization, documentation, automation, and dissemination</p></li>
+<li><p>Over the two day workshop, data analysis tasks will become more complex as we gather more data and ask more complicated questions, so we need better tools and workflows to combat issues arising in these areas</p></li>
+</ul>
 
-<br> <img src='data:image/png;base64,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' title=''/> <br> Put a sticky on your laptop <br> for help with software set up
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Four facets of reproducibility</h2></hgroup><article  id="four-facets-of-reproducibility">
 
-</center></article></slide>
+</article></slide><slide class=''><hgroup><h2>Four facets of reproducibility</h2></hgroup><article  id="four-facets-of-reproducibility-1">
+
+<ol>
+<li><strong>Documentation:</strong> difference between binary files (e.g. docx) and text files and why text files are preferred for documentation
+
+<ul>
+<li><em>Protip:</em> Use markdown to document your workflow so that anyone can pick up your data and follow what you are doing</li>
+<li><em>Protip:</em> Use literate programming so that your analysis and your results are tightly connected, or better yet, unseperable</li>
+</ul></li>
+<li><p><strong>Organization:</strong> tools to organize your projects so that you don&#39;t have a single folder with hundreds of files</p></li>
+<li><p><strong>Automation:</strong> the power of scripting to create automated data analyses</p></li>
+<li><p><strong>Dissemination:</strong> publishing is not the end of your analysis, rather it is a way station towards your future research and the future research of others</p></li>
+</ol></article></slide>
 
 
   <slide class="backdrop"></slide>
