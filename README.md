@@ -41,7 +41,7 @@ language agnostic.
 
 Participants install R+RStudio.
 
-See [email template](https://github.com/Reproducible-Science-Curriculum/rr-intro/blob/master/preworkshop_email.Rmd).
+See [email template](https://github.com/Reproducible-Science-Curriculum/rr-intro/blob/master/preworkshop-email.md).
 
 ## First half (01):
 
