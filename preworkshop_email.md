@@ -1,9 +1,5 @@
----
-title: "Pre-workshop email"
-author: "Reproducible Science Workshop"
-date: ""
-output: html_document
----
+Pre-workshop email
+=========
 
 This document contains standard language that can be used in the pre-workshop email
 including instructions for software set-up. 
