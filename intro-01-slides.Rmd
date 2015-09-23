@@ -1,7 +1,6 @@
 ---
 title: "Intro I: Motivating reproducibility"
 author: "Reproducible Science Workshop"
-date: ""
 output:
   ioslides_presentation:
     highlight: pygments
@@ -109,11 +108,11 @@ collaborator to reproduce your work starting with the original dataset
 a line plot.
 
 2. Something is clearly wrong with this plot! Turns out there's a data error 
-in the data file: life expectancy for Canada in the year 1967 is coded
+in the data file: life expectancy for Canada in the year 1957 is coded
 as `999999`, it should actually be `69.96`. Make this correction.
 
 3. Visualize life expectancy over time for Canada again, with the corrected data.<br>
-*Stretch goal:* Add lines for Mexico and US.
+*Stretch goal:* Add lines for Mexico and United States.
 
 
 ## Part 2: Swap + discuss
