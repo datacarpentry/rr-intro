@@ -1,7 +1,6 @@
 ---
 title: "Intro: Motivating reproducibility<br>Instructor notes"
 author: "Reproducible Science Workshop"
-date: ""
 output: 
     html_document:
         css: styling.css
