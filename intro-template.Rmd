@@ -46,18 +46,21 @@ library("dplyr")
 
 1. Filter the data for Canada only:
 ```{r}
-gap_5060_ca <- gap_5060 %>%
+gap_5060_CA <- gap_5060 %>%
   filter(country == "Canada")
 ```
 
 2. Visaualize:
 ```{r}
-ggplot(data = gap_5060_ca, aes(x = year, y = lifeExp)) +
+ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
   geom_line()
 ```
 
 #### Task 2: Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction.
 
+- `mutate` for creating a new variables
+- `replace` for replacing a data entry in a specific
+location as determined by the logical statement `(country == "Canada" & year == 1957)`
 ```{r}
 gap_5060 <- gap_5060 %>%
   mutate(lifeExp = replace(lifeExp, (country == "Canada" & year == 1957), 69.96)) %>%
@@ -66,20 +69,57 @@ gap_5060 <- gap_5060 %>%
 
 #### Task 3: Visualize life expectancy over time for Canada again, with the corrected data.
 
+Exact same code as before, but note that the contents of `gap_5060` are different as it 
+has been updated in the previous task.
 ```{r}
-gap_5060_ca <- gap_5060 %>%
+gap_5060_CA <- gap_5060 %>%
   filter(country == "Canada")
 
-ggplot(data = gap_5060_ca, aes(x = year, y = lifeExp)) +
+ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
   geom_line()
 ```
 
 #### Task 3 - Stretch goal: Add lines for Mexico and United States.
 
+- `%in%` for logical operator testing if a country's name is in the list provided
+- Same visualization code as before, only difference is the input dataset
 ```{r}
-gap_5060_amer <- gap_5060 %>%
+gap_5060_NA <- gap_5060 %>%
   filter(country %in% c("Canada", "Mexico", "United States"))
 
-ggplot(data = gap_5060_amer, aes(x = year, y = lifeExp, color = country)) +
+ggplot(data = gap_5060_NA, aes(x = year, y = lifeExp, color = country)) +
+  geom_line()
+```
+
+#### Extending your analysis with new data:
+
+Load the new data:
+```{r}
+gap_7080 <- read.csv("data/gapminder-7080.csv")
+gap_90plus <- read.csv("data/gapminder-90plus.csv")
+```
+
+Cobine data frames with `rbind` (**r**ow bind):
+```{r}
+gap <- rbind(gap_5060, gap_7080, gap_90plus)
+```
+
+Make the same plots, with the same code, just changing the input data frame:
+
+1. Canada only:
+```{r}
+gap_ca <- gap %>%
+  filter(country == "Canada")
+
+ggplot(data = gap_ca, aes(x = year, y = lifeExp)) +
+  geom_line()
+```
+
+2. North America:
+```{r}
+gap_NA <- gap %>%
+  filter(country %in% c("Canada", "Mexico", "United States"))
+
+ggplot(data = gap_NA, aes(x = year, y = lifeExp, color = country)) +
   geom_line()
 ```

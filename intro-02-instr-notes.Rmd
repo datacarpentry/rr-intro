@@ -30,6 +30,15 @@ documents (R Markdown)
 - How to subset data
 - How to make simple plots in ggplot
 
+### Important features of an R Markdown document to discuss:
+
+- YAML on top
+- Code in chunks
+- R Markdown syntax 
+    - Human readable!
+    - Limited, so not too time consuming to master
+- Self contained workspace
+
 ### Take aways:
 
 - The analysis is self-documenting

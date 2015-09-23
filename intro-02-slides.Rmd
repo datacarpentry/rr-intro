@@ -124,6 +124,16 @@ picture of how using R in this way facilitates reproducible analyses
         - Human readable!
         - Limited, so not too time consuming to master
     - Self contained workspace
+    
+## Extending the analysis
+
+Great news!? You just received some more data, in bits and pieces of course:
+
+- `gapminder-7080.csv`
+- `gapminder-90plus.csv`
+
+Add the data from 1970s and 1980s and 1990s plus, and recreate the same
+plots as before.
 
 ## Take aways
 
