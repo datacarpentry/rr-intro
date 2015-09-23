@@ -16,59 +16,48 @@ In this session we will start by reviewing case studies of (lack of) reproducibi
 * The role of documentation, sharing, automation, and organization in making your research more reproducible.
 * Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown.
 
-## Intro sessions:
+## Intro session:
 
 At the beginning of this workshop, participants should be able to
 
 - use a spreadsheet program to generate a plot
 - use a text editor (Word, Google Docs, etc.) to communicate
 
-At the end of the intro sessions students will be able to 
+At the end of the intro session students will be able to 
 
 - recognize the problems that reproducible research helps address 
-- identify pain points in getting their analysis to be reproducible.
+- identify pain points in getting their analysis to be reproducible
 
 The specific problems to be addresses in each session are as follows:
 
-- Session 1: documentation and sharing
-- Session 2: automation and organization
+- First half (01): motivating reproducibility
+- Second half (02): introduce R Markdown as a reproducible data analysis tool
 
-The second session will also introduce them to some tools that can be used to solve these 
-problems, specifically R/RStudio/RMarkdown.
+The intro session is designed such that if a workshop uses Python or some
+other language than R, only intro-02 will need to be updated, intro-01 is 
+language agnostic.
 
-## Session 1:
+## Pre-workshop:
 
-### Pre-workshop
+Participants install R+RStudio.
 
-Participants install R+RStudio
+See [email template](https://github.com/Reproducible-Science-Curriculum/rr-intro/blob/master/preworkshop_email.Rmd).
 
-See Intro Session 1 materials for email template
-
-### Intro
+## First half (01):
 
 - Welcome + go over schedule
     * Group discussion: 6 months from now can you or someone else go back to your project and understand what was going on? What types of methods do you use to document a project?
     * Take notes on the board as to tools people use.
 
-- Pick a case study or two from https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014/wiki/Irreproducible-Examples
-
-### Ex 1: Motivating reproducibility
+- Ex 1: Motivating reproducibility
 
 Data analysis task + share/reproduce + discuss. Outline is in the instructor notes (`intro-01-instr-notes.Rmd`).
 
-## Coffee break:
+## Second half (02):
 
-Catch everyone up with R/RStudio instructions
+- Provide RMarkdown approach to what's done in Session 1 (intro-template.Rmd)
 
-## Session 2:
-
-- Provide RMarkdown approach to what's done in Session 1 (intro-01-template.Rmd)
-
-### Ex 2: Extending your analysis
-
-Demonstrate how an approach based on executable scripts and self documenting code makes it easier to automate, organize, and extend our analyses.  Outline can be found in the instructor notes (`intro-02-instr-notes.Rmd`).
-
-- Wrap up with reviewing the reproducibility checklist is at `checklist.md`.
+- Wrap up with pointing participants to the [reproducibility checklist](https://github.com/Reproducible-Science-Curriculum/rr-intro/blob/master/checklist.md).
 
 ## Data attribution
 
