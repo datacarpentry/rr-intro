@@ -39,6 +39,13 @@ documents (R Markdown)
     - Limited, so not too time consuming to master
 - Self contained workspace
 
+### Extend the analysis:
+
+All code included in the template.
+
+Important to emphasize we're using the same subsetting and visualization code,
+just with new data. Reproducing old work with new data is easy!
+
 ### Take aways:
 
 - The analysis is self-documenting
