@@ -104,6 +104,7 @@ the Packages pane
 documents (R Markdown)
 - How to read data from a file
 - How to manipulate the data, and document it in a reproducible way
+    - How easy it would be to revert any changes if need be
 - How to subset data
 - How to make simple plots in ggplot
 

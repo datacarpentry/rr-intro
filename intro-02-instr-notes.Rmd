@@ -1,85 +1,44 @@
 ---
-title: 'Intro Session 2: Automation and Organization'
-author: ''
-date: ''
+title: "Intro II: Reproducibility toolkit"
+author: "Reproducible Science Workshop"
 output:
   html_document:
-    fig_height: 3
-    fig_width: 6
+    highlight: pygments
 ---
 
-**Estimated total time**: 1 hr 25 mins 
+## Introduce toolkit
 
+- R, RStudio, R Markdown
 
-### Summary of lessons from Intro 01 (15 min)
+- Walk through splash screens of R and RStudio (but spend more time on RStudio)
 
-Let's summarize what we've learned in our first session:
+## R Markdown demo
 
-* First and foremost, we learned that everyone struggles with reproducibility
-  and that it is a hindrance to moving science forward
+The goal of is to demonstrate how each of the goals of Organization, Documentation, Dissemination, and Automation can be addressed in an R Markdown document.
 
-* We focused on 4 problems: organization, documentation, automation, and
-  dissemination with a fairly simple analysis. Over the next two days, our
-  project will become more complex as we gather more data and ask more
-  complicated questions.
+### Key steps introduced:
 
-* In discussion:
+**IMPORTANT:** Emphasize that this exercise is NOT about understanding all the R commands, 
+but rather getting the big picture of how using R in this way facilitates reproducible 
+analyses.
 
-  * ***Organization*** you will be given tools to organize your projects
-    so that you don't have a single folder with hundreds of files
-  * ***Documentation*** you will learn the difference between binary files
-    (e.g. docx) and text files and why text files are preferred using a simple
-    tool called markdown that you can use to write descriptions of your data and
-    your workflow so that anyone can pick up your data and understand what you
-    are doing
-  * ***Automation*** you will learn about the power of scripting in the R
-    programming language and how you can integrate that into markdown to create
-    automated data analyses
-  * ***Dissemination*** you will see that publishing is not the end of your
-    analysis. Rather it is a way station towards your future research and the
-    future research of others.
+- Demonstrate "good practice" for organizing data files and analysis 
+documents (R Markdown)
+- How to read data from a file
+- How to manipulate the data, and document it in a reproducible way
+    - How easy it would be to revert any changes if need be
+- How to subset data
+- How to make simple plots in ggplot
 
-* Finally, throughout the workshop we will give you a rubric that you can use to
-  assess the likelihood that you analysis can be reproduced by others
-  
-  
-### Introduction to R/Rstudio (15 mins)
+### Take aways:
 
-See `intro-02-why-R.Rmd` document. 
+- The analysis is self-documenting
+- It's easy to extend or refine analyses by copying and modifying code blocks
+- The results of the analysis can be disseminated by sending R Markdown and 
+providing data sources, or just simply providing the generated HTML of just 
+a summary of the analysis is needed
 
-Note that if workshop is using different toolchain, would be easy to swap in something else here.
+## Reproducibility checklist:
 
-### Introduce analysis goals for this session (10 mins)
-
-See `intro-02-exercises.Rmd`.  
-
-These exercises parallel what students were asked to do in the first intro, but at a higher level of complexity.
-
-This might be best provided as a paper hand-out so the goals of each exercise are always in front of the participants.
-
-### Walk class through reproducible solutions to exercises (45 mins)
-
-See `intro-02-template.Rmd`.
-
-This template show how to solve each of the Intro 02 Exercises in R.
-
-The goal of this walk through is to demonstrate how each of the goals of Organization, Documentation, Dissemination, and Automation can be addressed in an R markdown document.
-
-Key steps introduced:
-
-IMPORTANT: Emphasize that this exercise is NOT about understanding all the R commands, but rather getting the big picture of how using R in this way facilitates reproducible analyses.
-
-0. Demonstrate "good practice" for organizing data files and analysis documents (R markdown)
-1. How to read data from a file
-2. How to combine data from multiple data frames
-3. How to subset data
-4. How to make simple plots in ggplot
-
-Points to make / takeaways:
-
-1. The analysis is self-documenting
-2. It's easy to extend or refine analyses by copying and modifying code blocks
-3. The results of the analysis can be disseminated by sending Markdown and providing data sources, or just simply providing the generated HTML of just a summary of the analysis is needed.
-
-
-
+Point them to the checklist, don't read the whole list (too long), but can
+discuss the documentation part if there is time.
