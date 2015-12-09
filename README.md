@@ -1,10 +1,6 @@
 rr-intro
 ========
 
-## People:
-
-**Mine Çetinkaya-Rundel** ([@mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel)), Paul Magwene ([@pmagwene](https://github.com/pmagwene)), Pat Schloss ([pschloss](https://github.com/pschloss)), Kristina Riemer ([KristinaRiemer](https://github.com/KristinaRiemer))
-
 ## Lesson synopsis:
 
 In this session we will start by reviewing case studies of (lack of) reproducibility gone wrong. Then participants will work on two reproducibility exercises: first a simple data manipulation and analysis exercise using any software they generally work with and then the same exercise (and extensions to it) using `RMarkdown` in RStudio as a better alternative, highlighting how this approach makes documentation, organization, automation, and dissemination easier.  
@@ -72,3 +68,12 @@ Data analysis task + share/reproduce + discuss. Outline is in the instructor not
         ```R
         pathToTsv <- system.file("gapminder.tsv", package = "gapminder")
         ```
+
+## People and credits
+
+This lesson was first created at the [1. Reproducible Science Curriculum Hackathon]. The corresponding author is **Mine Çetinkaya-Rundel** ([@mine-cetinkaya-rundel]). See the commit log for other contributors.
+
+Please post feedback and issues with the lesson on the repository's issue tracker. For instructor questions about teaching this lesson, you can also contact the corresponding author directly.
+
+[@mine-cetinkaya-rundel]: https://github.com/mine-cetinkaya-rundel
+[1. Reproducible Science Curriculum Hackathon]: https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014

@@ -134,6 +134,12 @@ Great news!? We just received some more data, in bits and pieces of course:
 
 Let's walk through generation of new plots for the 1970s and 1980s and 1990s plus (these new analyses are already in the `intro-tutorial.Rmd` document).
 
+Note that all code required to accomplish these tasks is also in the template.
+You do not need to come up with the R code, **knit** the document to combine
+the datasets and you'll see that the code required for recreating the plots
+is the same as above. That's the beauty of R Markdown!
+
+
 ## Take aways
 
 - The analysis is self-documenting
