@@ -109,7 +109,7 @@ documents (R Markdown)
 - How to make simple plots in ggplot
 
 **NOT** about understanding all the R commands, but **rather** getting the big 
-picture of how using R in this way facilitates reproducible analyses
+picture of how using R in this way facilitates reproducible analyses.
 
 ## R Markdown demo
 
@@ -134,6 +134,12 @@ Great news!? You just received some more data, in bits and pieces of course:
 
 Add the data from 1970s and 1980s and 1990s plus, and recreate the same
 plots as before.
+
+Note that all code required to accomplish these tasks is also in the template.
+You do not need to come up with the R code, **knit** the document to combine
+the datasets and you'll see that the code required for recreating the plots
+is the same as above. That's the beauty of R Markdown!
+
 
 ## Take aways
 
