@@ -12,26 +12,24 @@ In this session we will start by reviewing case studies of (lack of) reproducibi
 * The role of documentation, sharing, automation, and organization in making your research more reproducible.
 * Introducing some tools to solve these problems, specifically R/RStudio/RMarkdown.
 
-## Intro session:
+## Goals:
 
-At the beginning of this workshop, participants should be able to
+At the beginning of this session, participants should be able to
 
 - use a spreadsheet program to generate a plot
 - use a text editor (Word, Google Docs, etc.) to communicate
 
-At the end of the intro session students will be able to 
+At the end of the session students will be able to
 
-- recognize the problems that reproducible research helps address 
+- recognize the problems that reproducible research helps address
 - identify pain points in getting their analysis to be reproducible
 
-The specific problems to be addresses in each session are as follows:
+The specific problems to be addressed in each session are as follows:
 
 - First half (01): motivating reproducibility
 - Second half (02): introduce R Markdown as a reproducible data analysis tool
 
-The intro session is designed such that if a workshop uses Python or some
-other language than R, only intro-02 will need to be updated, intro-01 is 
-language agnostic.
+The first half of the intro session is language agnostic. If  a workshop uses programming language other than R, only intro-02 will need to be modified.
 
 ## Pre-workshop:
 
@@ -41,15 +39,16 @@ See [email template](https://github.com/Reproducible-Science-Curriculum/rr-intro
 
 ## First half (01):
 
-- Welcome + go over schedule
-    * Group discussion: 6 months from now can you or someone else go back to your project and understand what was going on? What types of methods do you use to document a project?
-    * Take notes on the board as to tools people use.
+See instructor notes (`intro-01-instr-notes.Rmd`) for details.
 
+- Welcome + go over schedule
+- Motivating reproducibility slides
+- Group discussion about current tools people are using for documentation / reproducibility
 - Ex 1: Motivating reproducibility
 
-Data analysis task + share/reproduce + discuss. Outline is in the instructor notes (`intro-01-instr-notes.Rmd`).
-
 ## Second half (02):
+
+See instructor notes (`intro-02-instr-notes.Rmd`) for details. 
 
 - Provide RMarkdown approach to what's done in Session 1 (intro-template.Rmd)
 
