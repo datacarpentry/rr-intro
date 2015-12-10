@@ -1,11 +1,3 @@
----
-title: "Intro: Motivating reproducibility<br>Instructor notes"
-author: "Reproducible Science Workshop"
-output:
-    html_document:
-        css: styling.css
-
----
 
 ## As participants arrive...
 
@@ -19,7 +11,7 @@ as well as install the following packages:
 
 It is possible that some of them did not yet do that. If people show up early remind
 them to complete installation, and re-point them to the instructions in the
-pre-workshop email and/or the workshop website.
+pre-workshop email and/or the workshop website. Note that they will not need these tools until after the coffee break. 
 
 
 ## Intro (15 min)
