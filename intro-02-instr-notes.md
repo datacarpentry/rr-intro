@@ -1,10 +1,3 @@
----
-title: "Intro II: Reproducibility toolkit"
-author: "Reproducible Science Workshop"
-output:
-  html_document:
-    highlight: pygments
----
 
 ## Introduce toolkit
 
@@ -18,11 +11,11 @@ The goal of is to demonstrate how each of the goals of Organization, Documentati
 
 ### Key steps introduced:
 
-**IMPORTANT:** Emphasize that this exercise is NOT about understanding all the R commands, 
-but rather getting the big picture of how using R in this way facilitates reproducible 
+**IMPORTANT:** Emphasize that this exercise is NOT about understanding all the R commands,
+but rather getting the big picture of how using R in this way facilitates reproducible
 analyses.
 
-- Demonstrate "good practice" for organizing data files and analysis 
+- Demonstrate "good practice" for organizing data files and analysis
 documents (R Markdown)
 - How to read data from a file
 - How to manipulate the data, and document it in a reproducible way
@@ -34,7 +27,7 @@ documents (R Markdown)
 
 - YAML on top
 - Code in chunks
-- R Markdown syntax 
+- R Markdown syntax
     - Human readable!
     - Limited, so not too time consuming to master
 - Self contained workspace
@@ -50,11 +43,11 @@ just with new data. Reproducing old work with new data is easy!
 
 - The analysis is self-documenting
 - It's easy to extend or refine analyses by copying and modifying code blocks
-- The results of the analysis can be disseminated by sending R Markdown and 
-providing data sources, or just simply providing the generated HTML of just 
+- The results of the analysis can be disseminated by sending R Markdown and
+providing data sources, or just simply providing the generated HTML of just
 a summary of the analysis is needed
 
 ## Reproducibility checklist:
 
-Point them to the checklist, don't read the whole list (too long), but can
+Point them to the checklist (`checklist.md`), don't read the whole list (too long), but can
 discuss the documentation part if there is time.
