@@ -1,18 +1,4 @@
----
-title: "Introduction"
-teaching: 30
-exercises: 10
-questions:
-- "What is reproducible research?"
-- "What are the keys to reproducible research?"
-objectives:
-- "Learn the four facets of reproducibility."
-keypoints:
-- "There are four facets to reproducibility: Documentation, Organization, Automation, Dissemination"
-output:  
-      html_document: 
-        keep_md: yes
----
+# Introduction
 
 
 
@@ -97,7 +83,7 @@ This is a two-part exercise:
 > >    geom_line()
 > > ```
 > > 
-> > <img src="figure/task_2_visualize-1.png" title="plot of chunk task_2_visualize" alt="plot of chunk task_2_visualize" style="display: block; margin: auto;" />
+> > <img src="01-introduction_files/figure-html/task_2_visualize-1.png" style="display: block; margin: auto;" />
 > > Task 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction.
 > > - `mutate` for creating a new variables
 - `replace` for replacing a data entry in a specific
@@ -120,7 +106,20 @@ location as determined by the logical statement `(country == "Canada" & year == 
 > >   geom_line()
 > > ```
 > > 
-> > <img src="figure/task_3-1.png" title="plot of chunk task_3" alt="plot of chunk task_3" style="display: block; margin: auto;" />
+> > <img src="01-introduction_files/figure-html/task_3-1.png" style="display: block; margin: auto;" />
+> > Task 3 - Stretch goal: Add lines for Mexico and United States.
+> > - `%in%` for logical operator testing if a country's name is in the list provided
+> > - Same visualization code as before, only difference is the input dataset
+> > 
+> > ```r
+> > gap_5060_NA <- gap_5060 %>%
+> >   filter(country %in% c("Canada", "Mexico", "United States"))
+> > 
+> > ggplot(data = gap_5060_NA, aes(x = year, y = lifeExp, color = country)) +
+> >   geom_line()
+> > ```
+> > 
+> > <img src="01-introduction_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 > > {: output}
 > {: solution}
 {: .challenge}
