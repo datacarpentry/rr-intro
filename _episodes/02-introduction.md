@@ -15,6 +15,7 @@ output:
 ---
 
 ## Our reproducibility toolkit
+
 ### `R` + `RStudio`
 
 #### Why `R`?
@@ -31,7 +32,7 @@ output:
 
 - Once you master one language you'll probably find it easier to learn another
 
-#### Once in R
+#### Once in `R`
 
 You could just type into the command prompt...
  - ... but that doesn't help much with documentation.
@@ -39,13 +40,13 @@ You could just type into the command prompt...
 
 #### A better solution
 - With RStudio you can combine your programming and your documentation.
-- RStudio gives you a single environment to combine your documentation and your analysis - It runs on top of R - Gives you a bunch of really cool features that we'll explore throughout the workshop.
+- RStudio gives you a single environment to combine your documentation and your analysis - It runs on top of `R` - Gives you a bunch of really cool features that we'll explore throughout the workshop.
 
 ## R Packages
 
-Packages are the fundamental units of reproducible R code. They include reusable R functions, the documentation that describes how to use them, and (often) sample data. (From: http://r-pkgs.had.co.nz)
+Packages are the fundamental units of reproducible R code. They include reusable `R` functions, the documentation that describes how to use them, and (often) sample data. (From: http://r-pkgs.had.co.nz)
 
-- We will use the ggplot2 package for plots and dplyr for data wrangling in this session.
+- We will use the `ggplot2` package for plots and `dplyr` for data wrangling in this session. Both packages come as part of the `tidyverse` suite of packages. 
 
 - If you have not yet done so, install this package by running the following in the Console:
 
@@ -58,13 +59,13 @@ install.packages("tidyverse")
 
 Goals of the demo:
 
-- Demonstrate "good practice" for organizing data files and analysis documents (R Markdown)
+- Demonstrate "good practice" for organizing data files and analysis documents (`RMarkdown`)
 - How to read data from a file
 - How to manipulate the data, and document it in a reproducible way
 - How easy it would be to revert any changes if need be
 - How to subset data
 - How to make simple plots in ggplot
-- **NOT** about understanding all the R commands, but  **rather** getting the big picture of how using R in this way facilitates reproducible analyses
+- **NOT** about understanding all the `R` commands, but  **rather** getting the big picture of how using `R` in this way facilitates reproducible analyses
 
 ### R Markdown demo
 
@@ -76,7 +77,7 @@ Important features:
 
 - YAML on top
 - Code in chunks
-- R Markdown syntax
+- `RMarkdown` syntax
     - Human readable!
     - Limited, so not too time consuming to master
 - Self contained workspace
@@ -90,12 +91,12 @@ Great news!? We just received some more data, in bits and pieces of course:
 
 Let's walk through generation of new plots for the 1970s and 1980s and 1990s plus (these new analyses are already in the `intro-tutorial.Rmd` document).
 
-Note that all code required to accomplish these tasks is also in the template. You do not need to come up with the R code, **knit** the document to combine the datasets and you'll see that the code required for recreating the plots is the same as above. That's the beauty of R Markdown!
+Note that all code required to accomplish these tasks is also in the template. You do not need to come up with the R code, **knit** the document to combine the datasets and you'll see that the code required for recreating the plots is the same as above. That's the beauty of `RMarkdown`!
 
 ### Take aways
 - The analysis is self-documenting
 - It's easy to extend or refine analyses by copying and modifying code blocks
-- The results of the analysis can be disseminated by sending R Markdown and providing data sources, or just simply providing the generated HTML of just a summary of the analysis is needed
+- The results of the analysis can be disseminated by sending `RMarkdown` and providing data sources, or just simply providing the generated HTML of just a summary of the analysis is needed
 
 > ## Reproducibility checklist
 >

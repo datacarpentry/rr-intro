@@ -81,6 +81,7 @@ This is a two-part exercise:
 > Stretch goal: Add lines for Mexico and United States.
 > ~~~
 > > ## Solution
+> > 
 > > 1. Import data
 > > 
 > > ```r
