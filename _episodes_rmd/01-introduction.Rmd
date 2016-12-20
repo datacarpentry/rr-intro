@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-teaching: 45
+teaching: 20
 exercises: 20
 questions:
 - "What is reproducible research?"
@@ -18,17 +18,24 @@ output:
 knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 ```
 
+## As you arrive, please make sure the following R packages are installed:
+- `tidyverse`
+- `rmarkdown`
+- `knitr`
+```{r install, eval = FALSE}
+install.packages("tidyverse")
+```
+
 ## Motivating Reproducibility
 - The sciences have with reproducibility problem. [Nature article](http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
-- Many published studies cannot be reproduced
-  - __Replication__ - when independent investigators use methods, protocols, data, and equipment to confirm scientific claims.
-  - __Reproduction__ - when data sets and computer code are made available for researchers to verify results.
+- Many published studies cannot be reproduced:
+    - **Replication** - when independent investigators use methods, protocols, data, and equipment to confirm scientific claims.
+    - **Reproduction** - when data sets and computer code are made available for researchers to verify results.
 - Peng (2009) Reproducible research and Biostatistics. [*Biostatistics 10: 405-408*](http://biostatistics.oxfordjournals.org/content/10/3/405.full)
 
 
 > ## *Science* retracts paper without agreement of lead author.
 > - Journal retracted a study of how canvassers can sway people's opinions about gay marriage.
->
 > -[Editor-in-Chief](http://news.sciencemag.org/policy/2015/05/science-retracts-gay-marriage-paper-without-lead-author-s-consent): Original survey data:
 >    + not made available for independent reproduction of results
 >    + Survey incentives misrepresented
@@ -47,7 +54,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 {: .callout}
 
 > ## Seizure study retracted after authors realized data were "Terribly mixed"
-> From the authors of Low Dose Lidocaine for Refractory Seizures in Preterm Neonates:
+> - From the authors of Low Dose Lidocaine for Refractory Seizures in Preterm Neonates:
 > "The article has been retracted at the request of the authors. After carefully re-examining the data presented in the article, they identified that data of two different hospitals got terribly mixed. The published results cannot be reproduced in accordance with scientific and clinical correctness." [IJP](http://retractionwatch.com/2013/02/01/seizure-study-retracted-after-authors-realize-data-got-terribly-mixed/)
 {: .callout}
 
@@ -75,6 +82,7 @@ This is a two-part exercise:
 > Stretch goal: Add lines for Mexico and United States.
 > ~~~
 > > ## Solution
+> > 
 > > 1. Import data
 > > ```{r answers_1}
 > > gap_5060 <- read.csv("../data/gapminder-5060.csv")
@@ -172,94 +180,3 @@ It is vital that scientific research be reproducible. This improves communicatio
 1. **Automation**: the power of scripting to create automated data analyses.
 
 1. **Dissemination**: publishing is not the end of your analysis, rather it is a way station towards your future research and the future research of others.
-
-## Our reproducibility toolkit
-### R + RStudio
-
-#### Why R?
-- Programming language for data analysis:
-  - Free!
-  - Open source
-  - Widely used and supported across all disciplines
-  - Can be used on Windows, Mac OS X, or Linux!
-
-#### Why not language X?
-- There are a number of other great programming tools out there that can also be used to improve the reproducibility of your analysis
-
-- The key is to use some type of language that will allow you to automate and document your analysis
-
-- Once you master one language you'll probably find it easier to learn another
-
-#### Once in R
-
-You could just type into the command prompt...
- - ... but that doesn't help much with documentation.
- - ... but that doesn't help much with automation.
-
-#### A better solution
-- With RStudio you can combine your programming and your documentation.
-- RStudio gives you a single environment to combine your documentation and your analysis - It runs on top of R - Gives you a bunch of really cool features that we'll explore throughout the workshop.
-
-## R Packages
-
-Packages are the fundamental units of reproducible R code. They include reusable R functions, the documentation that describes how to use them, and (often) sample data. (From: http://r-pkgs.had.co.nz)
-
-- We will use the ggplot2 package for plots and dplyr for data wrangling in this session.
-
-- If you have not yet done so, install these packages by running the following in the Console:
-
-```{r installation, eval = FALSE}
-install.packages("ggplot2")
-install.packages("dplyr")
-````
-
-## Demo
-
-Goals of the demo:
-
-- Demonstrate "good practice" for organizing data files and analysis documents (R Markdown)
-- How to read data from a file
-- How to manipulate the data, and document it in a reproducible way
-- How easy it would be to revert any changes if need be
-- How to subset data
-- How to make simple plots in ggplot
-- **NOT** about understanding all the R commands, but  **rather** getting the big picture of how using R in this way facilitates reproducible analyses
-
-### R Markdown demo
-
-Open `intro-template.Rmd`
-
-Click on `Knit HTML` to compile the document
-
-Important features:
-
-- YAML on top
-- Code in chunks
-- R Markdown syntax
-    - Human readable!
-    - Limited, so not too time consuming to master
-- Self contained workspace
-
-### Extending the analysis
-
-Great news!? We just received some more data, in bits and pieces of course:
-`gapminder-7080.csv`
-
-`gapminder-90plus.csv`
-
-Let's walk through generation of new plots for the 1970s and 1980s and 1990s plus (these new analyses are already in the `intro-tutorial.Rmd` document).
-
-Note that all code required to accomplish these tasks is also in the template. You do not need to come up with the R code, **knit** the document to combine the datasets and you'll see that the code required for recreating the plots is the same as above. That's the beauty of R Markdown!
-
-### Take aways
-- The analysis is self-documenting
-- It's easy to extend or refine analyses by copying and modifying code blocks
-- The results of the analysis can be disseminated by sending R Markdown and providing data sources, or just simply providing the generated HTML of just a summary of the analysis is needed
-
-> ## Reproducibility checklist
->
-> - Serves as a tool to help you think about the reproducibility of your data analysis.
-> - Many of the questions can be thought of as having a yes/no answer.
-> - A better approach would be to see the questions as being open ended with the real question being, "What can I do to improve the status of my project on this bullet point?"
-> - With that in mind, you'll never get 100% of the bullets right for your project, but you'll always be improving.
-{: .checklist}
