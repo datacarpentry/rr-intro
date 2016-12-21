@@ -20,7 +20,7 @@ working directory (where this RMarkdown file is located). Also note that this is
 as a character string, hence in quotation marks.
 
 ```{r}
-gap_5060 <- read.csv("data/gapminder-5060.csv")
+gap_5060 <- read.csv("../data/gapminder-5060.csv")
 ```
 
 ## Packages:

@@ -14,14 +14,15 @@ output:
         keep_md: yes
 ---
 
-
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
+```
 
 ## As you arrive, please make sure the following R packages are installed:
 - `tidyverse`
 - `rmarkdown`
 - `knitr`
-
-```r
+```{r install, eval = FALSE}
 install.packages("tidyverse")
 ```
 
@@ -83,36 +84,29 @@ This is a two-part exercise:
 > > ## Solution
 > > 
 > > 1. Import data
-> > 
-> > ```r
+> > ```{r answers_1}
 > > gap_5060 <- read.csv("../data/gapminder-5060.csv")
 > > ```
 > > 2. Load required pacakges
-> > 
-> > ```r
+> > ```{r load_packages, message = FALSE}
 > > library("ggplot2")
 > > library("dplyr")
 > > ```
 > > 3. Task 1 - Filter the data for Canada only:
-> > 
-> > ```r
+> > ```{r Task_1_filter}
 > > gap_5060_CA <- gap_5060 %>%
 > >   filter(country == "Canada")
 > > ```
 > > 4. Task 1 - Visaualize:
-> > 
-> > ```r
+> > ```{r task_2_visualize}
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >    geom_line()
 > > ```
-> > 
-> > <img src="figure/task_2_visualize-1.png" title="plot of chunk task_2_visualize" alt="plot of chunk task_2_visualize" style="display: block; margin: auto;" />
 > > Task 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction.
 > > - `mutate` for creating a new variables
 - `replace` for replacing a data entry in a specific
 location as determined by the logical statement `(country == "Canada" & year == 1957)`
-> > 
-> > ```r
+> > ```{r task_2}
 > > gap_5060 <- gap_5060 %>%
 > >   mutate(lifeExp = replace(lifeExp, (country == "Canada" & year == 1957), 69.96)) %>%
 > >   as.data.frame()
@@ -120,29 +114,23 @@ location as determined by the logical statement `(country == "Canada" & year == 
 > > Task 3. Visualize life expectancy over time for Canada again, with the corrected data.
 > > 
 > > Exact same code as before, but note that the contents of `gap_5060` are different as it has been updated in the previous task.
-> > 
-> > ```r
+> > ```{r task_3}
 > > gap_5060_CA <- gap_5060 %>%
 > > filter(country == "Canada")
 > > 
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >   geom_line()
 > > ```
-> > 
-> > <img src="figure/task_3-1.png" title="plot of chunk task_3" alt="plot of chunk task_3" style="display: block; margin: auto;" />
 > > Task 3 - Stretch goal: Add lines for Mexico and United States.
 > > - `%in%` for logical operator testing if a country's name is in the list provided
 > > - Same visualization code as before, only difference is the input dataset
-> > 
-> > ```r
+> > ```{r}
 > > gap_5060_NA <- gap_5060 %>%
 > >   filter(country %in% c("Canada", "Mexico", "United States"))
 > > 
 > > ggplot(data = gap_5060_NA, aes(x = year, y = lifeExp, color = country)) +
 > >   geom_line()
 > > ```
-> > 
-> > <img src="figure/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 > > {: output}
 > {: solution}
 {: .challenge}
