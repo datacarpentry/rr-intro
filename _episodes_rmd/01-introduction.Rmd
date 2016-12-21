@@ -68,84 +68,82 @@ install.packages("tidyverse")
 
 This is a two-part exercise:
 
-> ## Part 1: Analyze + document
+> ## Part 1: Analyze + Document
 >
-> Complete the following tasks and write instructions / documentation for your collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`).
->
-> ~~~
+> Complete the following tasks and write instructions / documentation for your collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`):
 > 1. Visualize life expectancy over time for Canada in the 1950s and 1960s using a line plot.
->
+> 
 > 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as 999999, it should actually be 69.96. Make this correction.
 >
 > 3. Visualize life expectancy over time for Canada again, with the corrected data.
 >
-> Stretch goal: Add lines for Mexico and United States.
-> ~~~
+> *Stretch goal*: Add lines for Mexico and United States.
+>
 > > ## Solution
-> > 
-> > 1. Import data
-> > ```{r answers_1}
+> >
+> > 1. **Import Data**
+> >
+> >```{r answers_1}
 > > gap_5060 <- read.csv("../data/gapminder-5060.csv")
-> > ```
-> > 2. Load required pacakges
-> > ```{r load_packages, message = FALSE}
-> > library("ggplot2")
-> > library("dplyr")
-> > ```
-> > 3. Task 1 - Filter the data for Canada only:
-> > ```{r Task_1_filter}
-> > gap_5060_CA <- gap_5060 %>%
-> >   filter(country == "Canada")
-> > ```
-> > 4. Task 1 - Visaualize:
-> > ```{r task_2_visualize}
+> >```
+> > 
+> > 2. **Load required pacakges**
+> >```{r load_packages}
+> > library("tidyverse")
+> >```
+> >
+> > 3. **Task 1** - Filter the data for Canada only:
+> >```{r Task_1_filter}
+> > gap_5060_CA <- gap_5060 %>% filter(country == "Canada")
+> >```
+> >
+> > 4. **Task 1** - Visaualize:
+> >```{r task_2_visualize}
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >    geom_line()
-> > ```
-> > Task 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction.
+> >```
+> > **Task 2**. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction:
 > > - `mutate` for creating a new variables
-- `replace` for replacing a data entry in a specific
+> > - `replace` for replacing a data entry in a specific
 location as determined by the logical statement `(country == "Canada" & year == 1957)`
-> > ```{r task_2}
+> >
+> >```{r task_2}
 > > gap_5060 <- gap_5060 %>%
 > >   mutate(lifeExp = replace(lifeExp, (country == "Canada" & year == 1957), 69.96)) %>%
 > >   as.data.frame()
-> > ```
-> > Task 3. Visualize life expectancy over time for Canada again, with the corrected data.
-> > 
-> > Exact same code as before, but note that the contents of `gap_5060` are different as it has been updated in the previous task.
-> > ```{r task_3}
+> >```
+> > **Task 3**. Visualize life expectancy over time for Canada again, with the corrected data. Exact same code as before, but note that the contents of `gap_5060` are different as it has been updated in the previous task.
+> >
+> >```{r task_3}
 > > gap_5060_CA <- gap_5060 %>%
 > > filter(country == "Canada")
 > > 
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >   geom_line()
-> > ```
-> > Task 3 - Stretch goal: Add lines for Mexico and United States.
+> >```
+> > **Task 3** - Stretch goal: Add lines for Mexico and United States.
 > > - `%in%` for logical operator testing if a country's name is in the list provided
 > > - Same visualization code as before, only difference is the input dataset
-> > ```{r}
+> >
+> >```{r more_task_3}
 > > gap_5060_NA <- gap_5060 %>%
 > >   filter(country %in% c("Canada", "Mexico", "United States"))
 > > 
 > > ggplot(data = gap_5060_NA, aes(x = year, y = lifeExp, color = country)) +
 > >   geom_line()
-> > ```
-> > {: output}
-> {: solution}
+> >```
+> > {: .output}
+> {: .solution}
 {: .challenge}
-
 
 > ## Part 2: Swap + discuss
 >
 > Introduce yourself to your collaborator and tell them why you're here.
 >
-> ~~~
 > 1. Swap instructions / documentation with your collaborator, and try to reproduce their work, first without talking to each other. If your collaborator does not have the software they need to reproduce your work, we encourage you to either help them install it or walk them through it on your computer in a way that would emulate the experience. (Remember, this could be part of the irreproducibility problem!)
 >
 > 2. Then, talk to each other about challenges you faced (or didn't face) or why you were or weren't able to reproduce their work.
 >
-> ~~~
 > {: .source}
 > {: .output}
 {: .challenge}

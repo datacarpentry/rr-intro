@@ -67,97 +67,113 @@ install.packages("tidyverse")
 
 This is a two-part exercise:
 
-> ## Part 1: Analyze + document
+> ## Part 1: Analyze + Document
 >
-> Complete the following tasks and write instructions / documentation for your collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`).
->
-> ~~~
+> Complete the following tasks and write instructions / documentation for your collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`):
 > 1. Visualize life expectancy over time for Canada in the 1950s and 1960s using a line plot.
->
+> 
 > 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as 999999, it should actually be 69.96. Make this correction.
 >
 > 3. Visualize life expectancy over time for Canada again, with the corrected data.
 >
-> Stretch goal: Add lines for Mexico and United States.
-> ~~~
+> *Stretch goal*: Add lines for Mexico and United States.
+>
 > > ## Solution
-> > 
-> > 1. Import data
-> > 
-> > ```r
+> >
+> > 1. **Import Data**
+> >
+> >
+> >```r
 > > gap_5060 <- read.csv("../data/gapminder-5060.csv")
-> > ```
-> > 2. Load required pacakges
+> >```
 > > 
-> > ```r
-> > library("ggplot2")
-> > library("dplyr")
-> > ```
-> > 3. Task 1 - Filter the data for Canada only:
-> > 
-> > ```r
-> > gap_5060_CA <- gap_5060 %>%
-> >   filter(country == "Canada")
-> > ```
-> > 4. Task 1 - Visaualize:
-> > 
-> > ```r
+> > 2. **Load required pacakges**
+> >
+> >```r
+> > library("tidyverse")
+> >```
+> >
+> >```
+> >## Loading tidyverse: ggplot2
+> >## Loading tidyverse: tibble
+> >## Loading tidyverse: tidyr
+> >## Loading tidyverse: readr
+> >## Loading tidyverse: purrr
+> >## Loading tidyverse: dplyr
+> >```
+> >
+> >```
+> >## Conflicts with tidy packages ----------------------------------------------
+> >```
+> >
+> >```
+> >## filter(): dplyr, stats
+> >## lag():    dplyr, stats
+> >```
+> >
+> > 3. **Task 1** - Filter the data for Canada only:
+> >
+> >```r
+> > gap_5060_CA <- gap_5060 %>% filter(country == "Canada")
+> >```
+> >
+> > 4. **Task 1** - Visaualize:
+> >
+> >```r
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >    geom_line()
-> > ```
-> > 
-> > <img src="figure/task_2_visualize-1.png" title="plot of chunk task_2_visualize" alt="plot of chunk task_2_visualize" style="display: block; margin: auto;" />
-> > Task 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction.
+> >```
+> >
+> ><img src="figure/task_2_visualize-1.png" title="plot of chunk task_2_visualize" alt="plot of chunk task_2_visualize" style="display: block; margin: auto;" />
+> > **Task 2**. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as `999999`, it should actually be `69.96`. Make this correction:
 > > - `mutate` for creating a new variables
-- `replace` for replacing a data entry in a specific
+> > - `replace` for replacing a data entry in a specific
 location as determined by the logical statement `(country == "Canada" & year == 1957)`
-> > 
-> > ```r
+> >
+> >
+> >```r
 > > gap_5060 <- gap_5060 %>%
 > >   mutate(lifeExp = replace(lifeExp, (country == "Canada" & year == 1957), 69.96)) %>%
 > >   as.data.frame()
-> > ```
-> > Task 3. Visualize life expectancy over time for Canada again, with the corrected data.
-> > 
-> > Exact same code as before, but note that the contents of `gap_5060` are different as it has been updated in the previous task.
-> > 
-> > ```r
+> >```
+> > **Task 3**. Visualize life expectancy over time for Canada again, with the corrected data. Exact same code as before, but note that the contents of `gap_5060` are different as it has been updated in the previous task.
+> >
+> >
+> >```r
 > > gap_5060_CA <- gap_5060 %>%
 > > filter(country == "Canada")
 > > 
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >   geom_line()
-> > ```
-> > 
-> > <img src="figure/task_3-1.png" title="plot of chunk task_3" alt="plot of chunk task_3" style="display: block; margin: auto;" />
-> > Task 3 - Stretch goal: Add lines for Mexico and United States.
+> >```
+> >
+> ><img src="figure/task_3-1.png" title="plot of chunk task_3" alt="plot of chunk task_3" style="display: block; margin: auto;" />
+> > **Task 3** - Stretch goal: Add lines for Mexico and United States.
 > > - `%in%` for logical operator testing if a country's name is in the list provided
 > > - Same visualization code as before, only difference is the input dataset
-> > 
-> > ```r
+> >
+> >
+> >```r
 > > gap_5060_NA <- gap_5060 %>%
 > >   filter(country %in% c("Canada", "Mexico", "United States"))
 > > 
 > > ggplot(data = gap_5060_NA, aes(x = year, y = lifeExp, color = country)) +
 > >   geom_line()
-> > ```
-> > 
-> > <img src="figure/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
-> > {: output}
-> {: solution}
+> >```
+> >
+> ><img src="figure/more_task_3-1.png" title="plot of chunk more_task_3" alt="plot of chunk more_task_3" style="display: block; margin: auto;" />
+> > {: .output}
+> {: .solution}
 {: .challenge}
-
 
 > ## Part 2: Swap + discuss
 >
 > Introduce yourself to your collaborator and tell them why you're here.
 >
-> ~~~
 > 1. Swap instructions / documentation with your collaborator, and try to reproduce their work, first without talking to each other. If your collaborator does not have the software they need to reproduce your work, we encourage you to either help them install it or walk them through it on your computer in a way that would emulate the experience. (Remember, this could be part of the irreproducibility problem!)
 >
 > 2. Then, talk to each other about challenges you faced (or didn't face) or why you were or weren't able to reproduce their work.
 >
-> ~~~
 > {: .source}
 > {: .output}
 {: .challenge}
