@@ -11,7 +11,6 @@ keypoints:
 - "`R`, `RStudio` and `RMarkdown` allow for powerful reproducible research."
 output:  
       html_document: 
-        keep_md: yes
 ---
 
 ## Our reproducibility toolkit
