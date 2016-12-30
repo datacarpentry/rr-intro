@@ -11,7 +11,6 @@ keypoints:
 - "There are four facets to reproducibility: Documentation, Organization, Automation, Dissemination"
 output:  
       html_document: 
-        keep_md: yes
 ---
 
 

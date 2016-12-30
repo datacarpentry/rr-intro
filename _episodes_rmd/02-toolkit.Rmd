@@ -10,8 +10,7 @@ objectives:
 keypoints:
 - "`R`, `RStudio` and `RMarkdown` allow for powerful reproducible research."
 output:  
-      html_document: 
-        keep_md: yes
+      html_document
 ---
 
 ## Our reproducibility toolkit
