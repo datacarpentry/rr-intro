@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - "There are four facets to reproducibility: Documentation, Organization, Automation, Dissemination"
 output:  
-      html_document: 
+      html_document
 ---
 
 
