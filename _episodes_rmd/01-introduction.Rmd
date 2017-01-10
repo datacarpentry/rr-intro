@@ -10,12 +10,12 @@ objectives:
 keypoints:
 - "There are four facets to reproducibility: Documentation, Organization, Automation, Dissemination"
 output:  
-
       html_document
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center",
+fig.path = "../figure/", fig.height = 5)
 ```
 
 ## As you arrive, please make sure the following R packages are installed:
