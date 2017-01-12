@@ -37,8 +37,8 @@ The following checklist serves as a tool to help you think about the reproducibi
 * Is the project under the control of a makefile? Could one run `make clean; make`?
 * How long would it take to rebuild your directory system if your hard drive failed?
 * Is manual manipulation of data kept to a minimum?
-* If manual manipulation is required, is there sufficient documentation to re-do the manipulation
-* Does data processing make use of open software code
+* If manual manipulation is required, is there sufficient documentation to re-do the manipulation?
+* Does data processing make use of open software code?
 * How sensitive are results to differences in operating system, dependency versions?
 * Is code written to be flexible enough to the addition of new data?
 * Does code include unit tests to confirm that it does what you think it does?
