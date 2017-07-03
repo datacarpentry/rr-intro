@@ -9,16 +9,17 @@ objectives:
 - "Learn the four facets of reproducibility."
 keypoints:
 - "There are four facets to reproducibility: Documentation, Organization, Automation, Dissemination"
-output:  
+output:
       html_document
 ---
 
 
 
 ## As you arrive, please make sure the following R packages are installed:
-- `tidyverse`
+- [`tidyverse`](http://tidyverse.org)
 - `rmarkdown`
 - `knitr`
+
 
 ```r
 install.packages("tidyverse")
@@ -70,7 +71,7 @@ This is a two-part exercise:
 >
 > Complete the following tasks and write instructions / documentation for your collaborator to reproduce your work starting with the original dataset (`data/gapminder-5060.csv`):
 > 1. Visualize life expectancy over time for Canada in the 1950s and 1960s using a line plot.
-> 
+>
 > 2. Something is clearly wrong with this plot! Turns out there's a data error in the data file: life expectancy for Canada in the year 1957 is coded as 999999, it should actually be 69.96. Make this correction.
 >
 > 3. Visualize life expectancy over time for Canada again, with the corrected data.
@@ -85,7 +86,7 @@ This is a two-part exercise:
 > >```r
 > > gap_5060 <- read.csv("../data/gapminder-5060.csv")
 > >```
-> > 
+> >
 > > 2. **Load required pacakges**
 > >
 > >```r
@@ -141,7 +142,7 @@ location as determined by the logical statement `(country == "Canada" & year == 
 > >```r
 > > gap_5060_CA <- gap_5060 %>%
 > > filter(country == "Canada")
-> > 
+> >
 > > ggplot(data = gap_5060_CA, aes(x = year, y = lifeExp)) +
 > >   geom_line()
 > >```
@@ -155,7 +156,7 @@ location as determined by the logical statement `(country == "Canada" & year == 
 > >```r
 > > gap_5060_NA <- gap_5060 %>%
 > >   filter(country %in% c("Canada", "Mexico", "United States"))
-> > 
+> >
 > > ggplot(data = gap_5060_NA, aes(x = year, y = lifeExp, color = country)) +
 > >   geom_line()
 > >```
